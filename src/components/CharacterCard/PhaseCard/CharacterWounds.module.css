@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.button {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-top: -8px;
+  cursor: pointer;
+}
+
+.buttonLeft {
+  border-width: 10px 20px 10px 0;
+  border-color: transparent #541115 transparent transparent;
+}
+
+.buttonRight {
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent #541115;
+}
+
+.axis {
+  position: relative;
+  height: 3px;
+  width: 100%;
+  background-color: #541115;
+}
+
+.knob {
+  position: absolute;
+  height: 12px;
+  margin-top: -4px;
+  width: 2px;
+  background-color: #541115;
+}
+
+.marker {
+  margin-left: -8px;
+  margin-top: -25px;
+  position: absolute;
+  font-size: 12px;
+  color: #daa520;
+}
+
+.woundsIndicator {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 20px 10px;
+  border-color: transparent transparent #b53a31 transparent;
+  margin-left: -10px;
+}

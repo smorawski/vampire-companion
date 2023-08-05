@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 5px;
+  width: 450px;
+  height: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px black solid;
+  background: rgb(9, 9, 121);
+  background: radial-gradient(
+    circle,
+    rgba(6, 6, 74, 1) 0%,
+    rgba(6, 6, 74, 1) 35%,
+    rgba(2, 0, 36, 1) 100%
+  );
+}

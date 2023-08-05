@@ -1,0 +1,16 @@
+.container {
+  color: white;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number {
+  color: #daa520;
+}
+
+.name {
+  font-size: 20px;
+  text-transform: uppercase;
+}

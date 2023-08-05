@@ -1,0 +1,11 @@
+.table {
+  text-transform: uppercase;
+  color: #daa520;
+  font-size: 10px;
+}
+
+.cell {
+  border: 1px solid #a9a9a9;
+  padding: 2px 5px;
+  background-color: rgba(6, 6, 74, 1);
+}

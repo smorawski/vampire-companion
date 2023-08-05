@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.statistic {
+  padding: 1px 5px;
+  border: 1px solid #daa520;
+  color: #daa520;
+  background-color: rgba(6, 6, 74, 1);
+  margin-right: 5px;
+}
+
+.container p {
+  margin-block: 3px;
+}
