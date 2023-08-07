@@ -1,10 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import ScenarioContextProvider from "./context/scenarioContext";
 import IntlProvider from "./translations/IntlProvider";
+
+import "./fonts/Roboto/Roboto-Italic.ttf";
+import "./fonts/Roboto/Roboto-Bold.ttf";
+import "./fonts/Roboto/Roboto-Regular.ttf";
+import "./index.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

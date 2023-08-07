@@ -1,6 +1,7 @@
 import { useCallback, useContext } from "react";
 import RefreshIcon from "../../Icons/Refresh";
 import { ScenarioContext } from "../../../context/scenarioContext";
+import MenuButton from "./MenuItem";
 
 interface ChangePhaseProps {
   characterId: string;
@@ -14,9 +15,9 @@ const ChangePhase = ({ characterId }: ChangePhaseProps) => {
   }, [characterId, changeCharacterPhase]);
 
   return (
-    <div style={{ cursor: "pointer" }} onClick={handleChange}>
+    <MenuButton onClick={handleChange} label="character.menu.changePhase">
       <RefreshIcon width="40px" />
-    </div>
+    </MenuButton>
   );
 };
 

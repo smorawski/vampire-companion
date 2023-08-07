@@ -1,11 +1,11 @@
 import styles from "./App.module.css";
+import AppSettings from "./components/AppSettings/AppSettings";
 import CharactersList from "./components/CharactersList/CharactersList";
-
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <div className={styles.app}>
+      <AppSettings />
       <CharactersList />
     </div>
   );

@@ -496,9 +496,9 @@
   "characters.jadeLinhDuplessis.special1.description": "<p>Target: Lowest Initiative</p><p><i>Jade uses her powers to uncover her enemies' secrets.</i></p><b>Special</b><p>(Target) reveal their <b>combat</b> card.</p>",
   "characters.jadeLinhDuplessis.special2.name": "Drain life",
   "characters.jadeLinhDuplessis.special2.description": "<p>Target: Most Injured</p><p><i>Hand outstretched, the Tremere empties a target of their blood.</i></p><b>Attack</b><p>(Target) +1 <b>Damage</b>, +1 <b>SLOW</b> token</p>",
-
   "characters.jadeLinhDuplessis.passive1.name": "Scientific Methodology",
   "characters.jadeLinhDuplessis.passive1.description": "+1 die to all <b>MENTAL</b> + <b>OCCULT</b> checks.",
+
   "target.closest": "Closest",
   "target.self": "Self",
   "target.most-injured": "Most Injured",
@@ -511,5 +511,9 @@
   "statistic.resistance": "Resistance",
 
   "character.phase1": "Phase I",
-  "character.phase2": "Phase II"
+  "character.phase2": "Phase II",
+
+  "character.menu.reset": "Reset",
+  "character.menu.changePhase": "Change phase",
+  "character.menu.remove": "Remove"
 }

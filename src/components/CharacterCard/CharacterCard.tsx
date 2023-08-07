@@ -18,7 +18,7 @@ const CharacterCard = ({ characterId, phase, wounds }: CharacterCardProps) => {
 
   const character = useMemo(() => {
     return dataProvider.getCharacter(characterId, numberOfPlayers);
-  }, [characterId]);
+  }, [characterId, numberOfPlayers]);
 
   if (!character) {
     // unknown card here

@@ -1,26 +1,43 @@
 import { IntlProvider as OriginalIntlProvider } from "react-intl";
-import translations from "./translations";
-import { useMemo } from "react";
+import translations, { SupportedLanguages } from "./translations";
+import { useMemo, createContext, useState } from "react";
 
 interface IntlProviderProps {
   children: React.ReactNode;
 }
 
+interface LanguageContext {
+  language: SupportedLanguages;
+  setLanguage: (language: SupportedLanguages) => void;
+}
+
+export const LanguageContext = createContext<LanguageContext>({
+  language: SupportedLanguages.en,
+  setLanguage: () => null,
+});
+
 const IntlProvider = ({ children }: IntlProviderProps) => {
-  const language = "en";
+  const [language, setLanguage] = useState(SupportedLanguages.en);
 
   const currentMessages = useMemo(() => {
     return translations[language];
   }, [language]);
 
   return (
-    <OriginalIntlProvider
-      messages={currentMessages}
-      locale={language}
-      defaultLocale="en"
+    <LanguageContext.Provider
+      value={{
+        language,
+        setLanguage,
+      }}
     >
-      {children}
-    </OriginalIntlProvider>
+      <OriginalIntlProvider
+        messages={currentMessages}
+        locale={language}
+        defaultLocale="en"
+      >
+        {children}
+      </OriginalIntlProvider>
+    </LanguageContext.Provider>
   );
 };
 

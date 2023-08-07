@@ -1,12 +1,14 @@
 import { useCallback, useContext, useMemo } from "react";
 import { FormattedMessage } from "react-intl";
-import { Modal } from "react-bootstrap";
+import Modal from "react-modal";
 import dataProvider from "../../data/dataProvider";
 import { ScenarioContext } from "../../context/scenarioContext";
 
 interface AddCharacterModalProps {
   onClose: () => void;
 }
+
+Modal.setAppElement("#root");
 
 const AddCharacterModal = ({ onClose }: AddCharacterModalProps) => {
   const { numberOfPlayers } = useContext(ScenarioContext);
@@ -26,20 +28,17 @@ const AddCharacterModal = ({ onClose }: AddCharacterModalProps) => {
   );
 
   return (
-    <Modal onHide={onClose} show={true}>
-      <Modal.Header closeButton />
-      <Modal.Body>
-        <div>
-          {characters.map((character) => {
-            return (
-              <div key={character.id} onClick={() => handleClick(character.id)}>
-                <FormattedMessage id={character.name} />
-              </div>
-            );
-          })}
-          <div></div>
-        </div>
-      </Modal.Body>
+    <Modal isOpen={true}>
+      <div>
+        {characters.map((character) => {
+          return (
+            <div key={character.id} onClick={() => handleClick(character.id)}>
+              <FormattedMessage id={character.name} />
+            </div>
+          );
+        })}
+        <div></div>
+      </div>
     </Modal>
   );
 };

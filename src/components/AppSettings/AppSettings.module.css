@@ -1,0 +1,16 @@
+.appStatus {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.appStatus > div {
+  margin-right: 5px;
+}
+
+.appStatus > div:last-child {
+  margin-right: 0px;
+}

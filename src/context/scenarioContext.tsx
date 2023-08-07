@@ -16,6 +16,7 @@ interface ScenarioContext {
   woundCharacter: (characterId: string) => void;
   healCharacter: (characterId: string) => void;
   changeCharacterPhase: (characterId: string) => void;
+  changeNumberOfPlayers: (numberOfPlayers: NumberOfPlayers) => void;
 }
 
 export const ScenarioContext = createContext<ScenarioContext>({
@@ -26,6 +27,7 @@ export const ScenarioContext = createContext<ScenarioContext>({
   woundCharacter: () => null,
   healCharacter: () => null,
   changeCharacterPhase: () => null,
+  changeNumberOfPlayers: () => null,
 });
 
 interface ScenarioContextProviderProps {
@@ -37,7 +39,7 @@ const ScenarioContextProvider = ({
 }: ScenarioContextProviderProps) => {
   const [characters, setCharacters] = useState<Array<ScenarioCharacter>>([]);
 
-  const [numberOfPlayers] = useState(NumberOfPlayers.Four);
+  const [numberOfPlayers, setNumberOfPlayers] = useState(NumberOfPlayers.Four);
 
   const addCharacter = useCallback(
     (characterId: string) => {
@@ -113,6 +115,13 @@ const ScenarioContextProvider = ({
     [characters]
   );
 
+  const changeNumberOfPlayers = useCallback(
+    (numberOfPlayers: NumberOfPlayers) => {
+      setNumberOfPlayers(numberOfPlayers);
+    },
+    [setNumberOfPlayers]
+  );
+
   return (
     <ScenarioContext.Provider
       value={{
@@ -123,6 +132,7 @@ const ScenarioContextProvider = ({
         woundCharacter,
         healCharacter,
         changeCharacterPhase,
+        changeNumberOfPlayers,
       }}
     >
       {children}
