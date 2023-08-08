@@ -108,7 +108,11 @@ const ScenarioContextProvider = ({
           if (character.id !== characterId) {
             return character;
           }
-          return { ...character, phase: character.phase === 0 ? 1 : 0 };
+          return {
+            ...character,
+            phase: character.phase === 0 ? 1 : 0,
+            wounds: 0,
+          };
         })
       );
     },

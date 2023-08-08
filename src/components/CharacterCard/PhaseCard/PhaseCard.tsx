@@ -75,21 +75,22 @@ const PhaseCard = ({
           <span>
             <FormattedMessage id={`character.phase${phase + 1}`} />
           </span>
-          <span>
+          <div className={styles.tableCell}>
             <MovementIcon />
             &nbsp;
             {movement}
-          </span>
-          <span>
+          </div>
+          <div className={styles.tableCell}>
             <LineOfSightIcon />
             &nbsp;
             {lineOfSights}
-          </span>
-          <span>
+          </div>
+
+          <div className={styles.tableCell}>
             <TargetIcon />
             &nbsp;
             <FormattedMessage id={`target.${target}`} />
-          </span>
+          </div>
         </CharacterTable>
       </div>
       <div className={styles.name}>

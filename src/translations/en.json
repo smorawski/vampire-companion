@@ -515,5 +515,7 @@
 
   "character.menu.reset": "Reset",
   "character.menu.changePhase": "Change phase",
-  "character.menu.remove": "Remove"
+  "character.menu.remove": "Remove",
+
+  "addCharacterModal.search.placeholder": "Search"
 }

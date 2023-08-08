@@ -1,0 +1,27 @@
+.character {
+  position: relative;
+  padding: 10px 5px;
+  border: 1px solid;
+  border-radius: 10px;
+  margin-bottom: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+}
+
+.number {
+  position: absolute;
+  margin-right: 20px;
+  color: #daa520;
+  left: 20px;
+}
+
+.name {
+  text-align: center;
+  margin: auto;
+}
+
+.searchInput {
+  border-radius: 5px;
+  padding: 5px;
+}
