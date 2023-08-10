@@ -499,6 +499,245 @@
   "characters.jadeLinhDuplessis.passive1.name": "Scientific Methodology",
   "characters.jadeLinhDuplessis.passive1.description": "+1 die to all <b>MENTAL</b> + <b>OCCULT</b> checks.",
 
+  "deck.shared.special1.title": "Special 1",
+  "deck.shared.special2.title": "Special 2",
+
+  "deck.animal.charge1.typeText": "Attack",
+  "deck.animal.charge1.title": "Charge",
+  "deck.animal.charge1.description": "<p>(Target) +2 <b>Damage</b>, -1 <b>Initiative</b></p>.",
+
+  "deck.animal.charge2.typeText": "Attack",
+  "deck.animal.charge2.title": "Charge",
+  "deck.animal.charge2.description": "<p>(Self) +1 <b>Movement</b></p><p>(Target) +1 <b>Damage</b></p>.",
+
+  "deck.animal.tear1.typeText": "Attack",
+  "deck.animal.tear1.title": "Tear",
+  "deck.animal.tear1.description": "<p>(Target) +1 <b>Damage</b>.</p>",
+
+  "deck.animal.tear2.typeText": "Attack",
+  "deck.animal.tear2.title": "Tear",
+  "deck.animal.tear2.description": "<p>(Self) -1 <b>RESISTANCE</b>,</p><p>(Target) +2 <b>Damage</b></p>.",
+
+  "deck.animal.bite1.typeText": "Attack",
+  "deck.animal.bite1.title": "Bite",
+  "deck.animal.bite1.description": "<p>(Target) +1 <b>Damage</b>.</p>",
+
+  "deck.animal.bite2.typeText": "Attack",
+  "deck.animal.bite2.title": "Bite",
+  "deck.animal.bite2.description": "<p>(Target) +1 <b>Damage</b>.</p>",
+
+  "deck.human.punch.typeText": "Attack",
+  "deck.human.punch.title": "Punch",
+  "deck.human.punch.description": "<p>(Self) +1 <b>Initiative</b>.</p>",
+
+  "deck.human.kneeStrike.typeText": "Attack",
+  "deck.human.kneeStrike.title": "Knee strike",
+  "deck.human.kneeStrike.description": "<p>(Target) +1 <b>Damage</b>, -1 <b>Initiative</b>.</p>",
+
+  "deck.human.kick1.typeText": "Attack",
+  "deck.human.kick1.title": "Kick",
+  "deck.human.kick1.description": "<p>(Target) +1 <b>Damage</b>.</p>",
+
+  "deck.human.kick2.typeText": "Attack",
+  "deck.human.kick2.title": "Kick",
+  "deck.human.kick2.description": "<p>(Target) +1 <b>Damage</b>.</p>",
+
+  "deck.human.guard.typeText": "Defense",
+  "deck.human.guard.title": "Guard",
+  "deck.human.guard.description": "<p>(Self) +1 <b>RESISTANCE</b>.</p>",
+
+  "deck.vampire.leap1.typeText": "Attack",
+  "deck.vampire.leap1.title": "Leap",
+  "deck.vampire.leap1.description": "<p>(Self) -1 <b>Initiative</b>, +1 <b> Movement</b>,</p><p>(Target) +1 <b>Damage</b>.</p>",
+
+  "deck.vampire.leap2.typeText": "Attack",
+  "deck.vampire.leap2.title": "Leap",
+  "deck.vampire.leap2.description": "<p>(Self) -1 <b>Initiative</b>, +1 <b> Movement</b>,</p><p>(Target) +1 <b>Damage</b>.</p>",
+
+  "deck.vampire.bite1.typeText": "Attack",
+  "deck.vampire.bite1.title": "Bite",
+  "deck.vampire.bite1.description": "<p>(Target) +1 <b>Damage</b>, +1 <b>Hunger</b>.</p>",
+
+  "deck.vampire.bite2.typeText": "Attack",
+  "deck.vampire.bite2.title": "Bite",
+  "deck.vampire.bite2.description": "<p>(Target) +1 <b>Damage</b>, +1 <b>Hunger</b>.</p>",
+
+  "deck.vampire.claw1.typeText": "Attack",
+  "deck.vampire.claw1.title": "Claw",
+  "deck.vampire.claw1.description": "<p>(Target) +1 <b>Damage</b>, -1 <b>Initiative</b>.</p>",
+
+  "deck.vampire.claw2.typeText": "Attack",
+  "deck.vampire.claw2.title": "Claw",
+  "deck.vampire.claw2.description": "<p>(Target) +1 <b>Damage</b>, -1 <b>Initiative</b>.</p>",
+
+  "deck.vampire.dash1.typeText": "Attack",
+  "deck.vampire.dash1.title": "Dash",
+  "deck.vampire.dash1.description": "<p>(Self) +1 <b>Initiative</b>, +1 <b>RESISTANCE</b>.</p>",
+
+  "deck.vampire.dash2.typeText": "Attack",
+  "deck.vampire.dash2.title": "Dash",
+  "deck.vampire.dash2.description": "<p>(Self) +1 <b>Initiative</b>, +1 <b>RESISTANCE</b>.</p>",
+
+  "deck.authority.hook1.typeText": "Attack",
+  "deck.authority.hook1.title": "Hook",
+  "deck.authority.hook1.description": "<p>(Self) +1 <b>Initiative</b>, </p><p>(Target) +1 <b>Damage</b>.</p>",
+
+  "deck.authority.hook2.typeText": "Attack",
+  "deck.authority.hook2.title": "Hook",
+  "deck.authority.hook2.description": "<p>(Self) +1 <b>Initiative</b>, </p><p>(Target) +1 <b>Damage</b>.</p>",
+
+  "deck.authority.uppercut1.typeText": "Attack",
+  "deck.authority.uppercut1.title": "Hook",
+  "deck.authority.uppercut1.description": "<p>(Target) +1 <b>Damage</b>.",
+
+  "deck.authority.uppercut2.typeText": "Attack",
+  "deck.authority.uppercut2.title": "Hook",
+  "deck.authority.uppercut2.description": "<p>(Target) +1 <b>Damage</b>.",
+
+  "deck.authority.stick.typeText": "Attack",
+  "deck.authority.stick.title": "Stick",
+  "deck.authority.stick.description": "<p>(Target) +1 <b>Damage</b>, -1 <b>Initiative</b>.</p>",
+
+  "deck.authority.straightShot.typeText": "Attack in Line of Sight",
+  "deck.authority.straightShot.title": "Straight shot",
+  "deck.authority.straightShot.description": "<p>(Self) -1 <b>Initiative</b>,</p><p>(Target) +1 <b>Damage</b>.</p>",
+
+  "deck.authority.guard.typeText": "Defense",
+  "deck.authority.guard.title": "Guard",
+  "deck.authority.guard.description": "<p>(Self) +1 <b>RESISTANCE</b>.</p>",
+
+  "deck.ghoul.punch1.typeText": "Attack",
+  "deck.ghoul.punch1.title": "Punch",
+  "deck.ghoul.punch1.description": "<p>(Self) +1 <b>Initiative</b>.</p>",
+
+  "deck.ghoul.punch2.typeText": "Attack",
+  "deck.ghoul.punch2.title": "Punch",
+  "deck.ghoul.punch2.description": "<p>(Self) +1 <b>Initiative</b>.</p>",
+
+  "deck.ghoul.hook1.typeText": "Attack",
+  "deck.ghoul.hook1.title": "Hook",
+  "deck.ghoul.hook1.description": "<p>(Self) +1 <b>Initiative</b>,</p><p>(Target) +1 <b>Damage</b>.</p>",
+
+  "deck.ghoul.hook2.typeText": "Attack",
+  "deck.ghoul.hook2.title": "Hook",
+  "deck.ghoul.hook2.description": "<p>(Self) +1 <b>Initiative</b>,</p><p>(Target) +1 <b>Damage</b>.</p>",
+
+  "deck.ghoul.kick1.typeText": "Attack",
+  "deck.ghoul.kick1.title": "Kick",
+  "deck.ghoul.kick1.description": "<p>(Target) +1 <b>Damage</b>.</p>",
+
+  "deck.ghoul.kick2.typeText": "Attack",
+  "deck.ghoul.kick2.title": "Kick",
+  "deck.ghoul.kick2.description": "<p>(Target) +1 <b>Damage</b>.</p>",
+
+  "deck.ghoul.guard.typeText": "Defense",
+  "deck.ghoul.guard.title": "Guard",
+  "deck.ghoul.guard.description": "<p>(Self) +1 <b>RESISTANCE</b>.</p>",
+
+  "deck.ally.punch1.typeText": "Attack",
+  "deck.ally.punch1.title": "Punch",
+  "deck.ally.punch1.description": "<p>(Self) +1 <b>Initiative</b>.</p>",
+
+  "deck.ally.punch2.typeText": "Attack",
+  "deck.ally.punch2.title": "Punch",
+  "deck.ally.punch2.description": "<p>(Self) +1 <b>Initiative</b>.</p>",
+
+  "deck.ally.bite1.typeText": "Attack",
+  "deck.ally.bite1.title": "Bite",
+  "deck.ally.bite1.description": "<p>(Target) +1 <b>Damage</b>.</p>",
+
+  "deck.ally.bite2.typeText": "Attack",
+  "deck.ally.bite2.title": "Bite",
+  "deck.ally.bite2.description": "<p>(Target) +1 <b>Damage</b>.</p>",
+
+  "deck.ally.guard.typeText": "Defense",
+  "deck.ally.guard.title": "Guard",
+  "deck.ally.guard.description": "<p>(Self) +1 <b>RESISTANCE</b>.</p>",
+
+  "deck.boss1.tear.typeText": "Attack",
+  "deck.boss1.tear.title": "Tear",
+  "deck.boss1.tear.description": "<p>(Target) +2 <b>Damage</b>, +1 <b>BLEED</b> token if they suffer <b>Damage</b>.</p>",
+
+  "deck.boss1.bite.typeText": "Attack",
+  "deck.boss1.bite.title": "Bite",
+  "deck.boss1.bite.description": "<p>(Target) +2 <b>Damage</b>, +1 <b>BLEED</b> token if they suffer <b>Damage</b>.</p>",
+
+  "deck.boss1.charge.typeText": "Attack",
+  "deck.boss1.charge.title": "Charge",
+  "deck.boss1.charge.description": "<p>(Self) +2 <b>Movement</b>,</p><p> +2 <b>Damage</b>.</p>",
+
+  "deck.boss1.howl.typeText": "Defense",
+  "deck.boss1.howl.title": "Howl",
+  "deck.boss1.howl.description": "<p>(Target) +1 <b>Damage</b>, +2 <b>SLOW</b> tokens, -1 <b>Initiative</b>.</p>",
+
+  "deck.boss2.punch.typeText": "Attack",
+  "deck.boss2.punch.title": "Punch",
+  "deck.boss2.punch.description": "<p>(Self) +1 <b>Initiative</b>.</p>",
+
+  "deck.boss2.guard.typeText": "Defense",
+  "deck.boss2.guard.title": "Guard",
+  "deck.boss2.guard.description": "<p>(Self) +2 <b>RESISTANCE</b>.</p>",
+
+  "deck.boss3.tear.typeText": "Attack",
+  "deck.boss3.tear.title": "Tear",
+  "deck.boss3.tear.description": "<p>(Self) -1 <b>RESISTANCE</b>,</p><p>(Target) +1 <b>Damage</b>.</p>",
+
+  "deck.boss3.charge.typeText": "Attack",
+  "deck.boss3.charge.title": "Charge",
+  "deck.boss3.charge.description": "<p>(Self) +1 <b>Movement</b>,</p><p>(Target) +1 <b>Damage</b>.</p>",
+
+  "deck.boss4.bloodBoil.typeText": "Attack in Line of Sight",
+  "deck.boss4.bloodBoil.title": "Blood boil",
+  "deck.boss4.bloodBoil.description": "<p>(Target) +1 <b>Damage</b>, +1 <b>Hunger</b>.</p>",
+
+  "deck.boss4.piercingShot.typeText": "Attack in Line of Sight",
+  "deck.boss4.piercingShot.title": "Piercing shot",
+  "deck.boss4.piercingShot.description": "<p>(Target) +1 <b>Damage</b>, +1 <b>BLEED</b> token.</p>",
+
+  "deck.boss5.claw.typeText": "Attack",
+  "deck.boss5.claw.title": "Claw",
+  "deck.boss5.claw.description": "<p>(Target) -1 <b>Initiative</b>.</p>",
+
+  "deck.boss5.dash.typeText": "Attack",
+  "deck.boss5.dash.title": "Dash",
+  "deck.boss5.dash.description": "<p>(Self) +1 <b>Movement</b>.</p>",
+
+  "deck.boss6.tear.typeText": "Attack",
+  "deck.boss6.tear.title": "Tear",
+  "deck.boss6.tear.description": "<p>(Target) +1 <b>Damage</b>, +1 <b>BLEED</b> token.</p>",
+
+  "deck.boss6.fleshOfMarble.typeText": "Defense",
+  "deck.boss6.fleshOfMarble.title": "fleshOfMarble",
+  "deck.boss6.fleshOfMarble.description": "<p>(Self) Ignores all <b>Damage</b> until the <b>round</b> ends.</p>",
+
+  "deck.boss6.frenzy.typeText": "Attack in Line of Sight",
+  "deck.boss6.frenzy.title": "Frenzy",
+  "deck.boss6.frenzy.description": "<p>(Target) +2 <b>Hunger</b>.</p>",
+
+  "deck.boss6.bite.typeText": "Attack",
+  "deck.boss6.bite.title": "Bite",
+  "deck.boss6.bite.description": "<p>(Target) +2 <b>Damage</b>, +2 <b>Hunger</b>.</p>",
+
+  "deck.boss7.begone.typeText": "Defense",
+  "deck.boss7.begone.title": "Begone!",
+  "deck.boss7.begone.description": "<p>(All) <b>Push</b> back 4 <b>HEX</b> away from the altar.</p>",
+
+  "deck.boss7.salvation.typeText": "Defense",
+  "deck.boss7.salvation.title": "Salvation",
+  "deck.boss7.salvation.description": "<p>(Self) -4 <b>Damage</b>.</p>",
+
+  "deck.boss8.auraOfDecay.typeText": "Attack",
+  "deck.boss8.auraOfDecay.title": "Aura of decay",
+  "deck.boss8.auraOfDecay.description": "<p>(All in a range of 3 <b>HEX</b>) +2 <b>Damage</b>.</p>",
+
+  "deck.boss8.freeze.typeText": "Defense",
+  "deck.boss8.freeze.title": "Freeze!",
+  "deck.boss8.freeze.description": "<p>(All in <b>Line of Sight</b>) +1 <b>STUN</b> token.</p>",
+
+  "deck.boss8.smash.typeText": "Attack",
+  "deck.boss8.smash.title": "Smash",
+  "deck.boss8.smash.description": "<p>(Target) +3 <b>Damage</b>, +1 <b>IMMOBILIZE</b> token.</p>",
+
   "target.closest": "Closest",
   "target.self": "Self",
   "target.most-injured": "Most Injured",
@@ -516,6 +755,8 @@
   "character.menu.reset": "Reset",
   "character.menu.changePhase": "Change phase",
   "character.menu.remove": "Remove",
+
+  "character.combatCard.placeholder": "Combat Card",
 
   "addCharacterModal.search.placeholder": "Search"
 }

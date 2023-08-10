@@ -34,6 +34,7 @@ export enum Targeting {
   LeastInjured = "least-injured",
   HighestInitiative = "highest-initiative",
   LowestInitiative = "lowest-initiative",
+  All = "all",
 }
 
 export enum EventType {
@@ -97,4 +98,25 @@ export type CharacterDisplay = Pick<
   "id" | "attitude" | "combatDeck" | "image" | "name" | "number"
 > & {
   phases: Array<CharacterPhaseDisplay>;
+};
+
+export enum CardType {
+  Attack = "Attack",
+  Defense = "Defense",
+  Special1 = "Special1",
+  Special2 = "Special2",
+}
+
+export type Card = {
+  id: string;
+  type: CardType;
+  typeText?: string;
+  title?: string;
+  description?: string;
+  target?: Targeting;
+};
+
+export type Deck = {
+  type: DeckType;
+  cards: Array<Card>;
 };

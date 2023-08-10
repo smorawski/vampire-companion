@@ -1,6 +1,7 @@
 import characters from "./characters/characters";
+import decks from "./decks/decks";
 import { fromStorageToDisplay } from "./mappers/character";
-import { NumberOfPlayers } from "./types";
+import { DeckType, NumberOfPlayers } from "./types";
 
 export * from "./types";
 
@@ -17,5 +18,11 @@ export default {
       return null;
     }
     return fromStorageToDisplay(character, numberOfPlayers);
+  },
+  getDecks: () => {
+    return decks;
+  },
+  getDeck: (deckType: DeckType) => {
+    return decks.find((deck) => deck.type === deckType);
   },
 };

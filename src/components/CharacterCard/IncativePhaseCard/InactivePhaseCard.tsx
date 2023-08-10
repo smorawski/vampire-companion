@@ -8,6 +8,7 @@ import LineOfSightIcon from "../../Icons/LineOfSight";
 import MovementIcon from "../../Icons/Movement";
 import CharacterImage from "./CharacterIcon";
 import CharacterTable from "../CharacterTable";
+import IconWithText from "../../Icons/IconWithText/IconWithText";
 
 interface InactivePhaseCardProps {
   image: string;
@@ -40,16 +41,13 @@ const InactivePhaseCard = ({
       <div>
         <CharacterTable>
           {deckType}
-          <span>
+          <IconWithText text={movement}>
             <MovementIcon />
-            &nbsp;
-            {movement}
-          </span>
-          <span>
+          </IconWithText>
+
+          <IconWithText text={lineOfSight}>
             <LineOfSightIcon />
-            &nbsp;
-            {lineOfSight}
-          </span>
+          </IconWithText>
           <span>
             {attitude === Attitude.Aggresive ? <FistIcon /> : <PalmIcon />}
           </span>

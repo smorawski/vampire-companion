@@ -15,6 +15,7 @@ import TargetIcon from "../../Icons/Target";
 import styles from "./PhaseCard.module.css";
 import { useCallback, useContext } from "react";
 import { ScenarioContext } from "../../../context/scenarioContext";
+import IconWithText from "../../Icons/IconWithText/IconWithText";
 
 interface PhaseCardProps {
   movement: number;
@@ -75,22 +76,16 @@ const PhaseCard = ({
           <span>
             <FormattedMessage id={`character.phase${phase + 1}`} />
           </span>
-          <div className={styles.tableCell}>
+          <IconWithText text={movement}>
             <MovementIcon />
-            &nbsp;
-            {movement}
-          </div>
-          <div className={styles.tableCell}>
+          </IconWithText>
+          <IconWithText text={lineOfSights}>
             <LineOfSightIcon />
-            &nbsp;
-            {lineOfSights}
-          </div>
+          </IconWithText>
 
-          <div className={styles.tableCell}>
+          <IconWithText text={intl.formatMessage({ id: `target.${target}` })}>
             <TargetIcon />
-            &nbsp;
-            <FormattedMessage id={`target.${target}`} />
-          </div>
+          </IconWithText>
         </CharacterTable>
       </div>
       <div className={styles.name}>

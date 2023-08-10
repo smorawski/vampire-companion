@@ -23,11 +23,6 @@
   display: inline;
 }
 
-.tableCell {
-  display: flex;
-  align-items: center;
-}
-
 .name {
   grid-area: name;
   text-transform: uppercase;

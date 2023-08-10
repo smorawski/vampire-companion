@@ -10,12 +10,13 @@ const CharactersList = () => {
 
   return (
     <div className={styles.container}>
-      {characters.map(({ id, wounds, phase }) => (
+      {Object.values(characters).map(({ id, wounds, phase, card }) => (
         <CharacterCard
           key={id}
           characterId={id}
           wounds={wounds}
           phase={phase}
+          card={card}
         />
       ))}
 

@@ -1,19 +1,27 @@
 import { useContext, useMemo } from "react";
-import Card from "../Card/Card";
-import dataProvider from "../../data/dataProvider";
+import CardComponent from "../Card/Card";
+import dataProvider, { Card } from "../../data/dataProvider";
 import InactivePhaseCard from "./IncativePhaseCard/InactivePhaseCard";
 import { ScenarioContext } from "../../context/scenarioContext";
 import PhaseCard from "./PhaseCard/PhaseCard";
 import styles from "./CharacterCard.module.css";
 import CharacterMenu from "./Menu/CharacterMenu";
+import CombatCard from "./CombatCard/CombatCard";
+import EmptyCombatCard from "./CombatCard/EmptyCombatCard";
 
 interface CharacterCardProps {
   characterId: string;
   wounds: number;
   phase: number;
+  card?: Card;
 }
 
-const CharacterCard = ({ characterId, phase, wounds }: CharacterCardProps) => {
+const CharacterCard = ({
+  characterId,
+  phase,
+  wounds,
+  card,
+}: CharacterCardProps) => {
   const { numberOfPlayers } = useContext(ScenarioContext);
 
   const character = useMemo(() => {
@@ -31,7 +39,7 @@ const CharacterCard = ({ characterId, phase, wounds }: CharacterCardProps) => {
 
   return (
     <div className={styles.container}>
-      <Card>
+      <CardComponent>
         {effectivePhase < 0 ? (
           <InactivePhaseCard
             image={character.image}
@@ -61,9 +69,22 @@ const CharacterCard = ({ characterId, phase, wounds }: CharacterCardProps) => {
             phase={effectivePhase}
           />
         )}
-      </Card>
+      </CardComponent>
       <div className={styles.menu}>
         <CharacterMenu characterId={characterId} />
+      </div>
+      <div className={styles.combatCard}>
+        {card ? (
+          <CombatCard
+            type={card.type}
+            typeText={card.typeText}
+            title={card.title}
+            description={card.description}
+            target={card?.target}
+          />
+        ) : (
+          <EmptyCombatCard />
+        )}
       </div>
     </div>
   );
