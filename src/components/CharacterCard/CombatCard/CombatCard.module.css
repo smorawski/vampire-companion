@@ -1,4 +1,5 @@
 .container {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -39,4 +40,15 @@
 .target {
   font-size: 10px;
   color: #daa520;
+}
+
+.unrevealedOverlay {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  background-color: rgb(71, 70, 70);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }

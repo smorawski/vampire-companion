@@ -6,6 +6,7 @@ import styles from "./CombatCard.module.css";
 import TargetIcon from "../../Icons/Target";
 import IconWithText from "../../Icons/IconWithText/IconWithText";
 import CrossIcon from "../../Icons/Cross";
+import { useState } from "react";
 
 interface CombatCardProps {
   typeText?: string;
@@ -30,6 +31,8 @@ const CombatCard = ({
     (type === CardType.Special2 && "deck.shared.special2.title");
 
   const intl = useIntl();
+
+  const [revealed, setRevealed] = useState(false);
 
   return (
     <SmallCard>
@@ -67,6 +70,14 @@ const CombatCard = ({
             </IconWithText>
           )}
         </div>
+        {!revealed && (
+          <div
+            className={styles.unrevealedOverlay}
+            onClick={() => setRevealed(true)}
+          >
+            <FormattedMessage id="character.combatCard.unrevealed" />
+          </div>
+        )}
       </div>
     </SmallCard>
   );

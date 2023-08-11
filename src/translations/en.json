@@ -757,6 +757,7 @@
   "character.menu.remove": "Remove",
 
   "character.combatCard.placeholder": "Draw Combat Card",
+  "character.combatCard.unrevealed": "Reveal Combat Card",
 
   "addCharacterModal.search.placeholder": "Search"
 }
