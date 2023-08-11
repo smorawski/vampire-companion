@@ -1,4 +1,4 @@
-import { useContext, useMemo } from "react";
+import { useContext, useMemo, useCallback } from "react";
 import CardComponent from "../Card/Card";
 import dataProvider, { Card } from "../../data/dataProvider";
 import InactivePhaseCard from "./IncativePhaseCard/InactivePhaseCard";
@@ -22,7 +22,8 @@ const CharacterCard = ({
   wounds,
   card,
 }: CharacterCardProps) => {
-  const { numberOfPlayers } = useContext(ScenarioContext);
+  const { numberOfPlayers, drawCard, discardCard } =
+    useContext(ScenarioContext);
 
   const character = useMemo(() => {
     return dataProvider.getCharacter(characterId, numberOfPlayers);
@@ -32,6 +33,14 @@ const CharacterCard = ({
     // unknown card here
     return <></>;
   }
+
+  const drawCardCallback = useCallback(() => {
+    drawCard(characterId);
+  }, [characterId, drawCard]);
+
+  const discardCardCallback = useCallback(() => {
+    discardCard(characterId);
+  }, [characterId, discardCard]);
 
   const hasMutiplePhases = character?.phases.length > 1;
 
@@ -81,9 +90,10 @@ const CharacterCard = ({
             title={card.title}
             description={card.description}
             target={card?.target}
+            onDiscard={discardCardCallback}
           />
         ) : (
-          <EmptyCombatCard />
+          <EmptyCombatCard onClick={drawCardCallback} />
         )}
       </div>
     </div>

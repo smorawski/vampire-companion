@@ -95,7 +95,7 @@
 
   "characters.werewolf.name": "Werewolf",
   "characters.werewolf.special1.name": "Rage",
-  "characters.werewolf.special1.description": "<p><i>The werewolf closes its powerful jaw on its prey.</i></p><p><b>Defense</b></p><p>(Target) +2 <b>Damage</b>.",
+  "characters.werewolf.special1.description": "<p><i>The werewolf closes its powerful jaw on its prey.</i></p><p><b>Defense</b></p><p>(Target) +2 <b>Damage</b>.</p>",
   "characters.werewolf.special2.name": "Earthshock",
   "characters.werewolf.special2.description": "<p><i>The walls of the underground lair quake as the werewolf slamsthe ground with its fists.</i></p><p><b>Defense</b></p><p>(All) +1 <b>IMMOBILIZE</b> token.</p>",
   "characters.werewolf.special3.name": "Blind rage",
@@ -127,7 +127,7 @@
   "characters.sid.special2.name": "Blood curse",
   "characters.sid.special2.description": "<p><i>Your Blood boils in your veins.</i></p><p><b>Attack</b></p><p>(Target) +1 <b>BLEED</b>, -1 <b>Initiative</b>.</p>",
   "characters.sid.passive1.name": "Retribution",
-  "characters.sid.passive1.description": "Attacker is pushed back 2 <b>HEX</b>.",
+  "characters.sid.passive1.description": "<p>Attacker is pushed back 2 <b>HEX</b>.</p>",
 
   "characters.maggie.name": "Maggie",
   "characters.maggie.special1.name": "Vicious bite",
@@ -139,7 +139,7 @@
   "characters.maggie.special4.name": "Crushing leap",
   "characters.maggie.special4.description": "<p><i>With both feet, she aims to end you.</i></p><b>Attack</b><p>(Self) +1 <b>Initiative</b>, (Target) +1 <b>Damage</b>.</p>",
   "characters.maggie.passive1.name": "Blood bond",
-  "characters.maggie.passive1.description": "The bloodsisters share 1 <b>Damage</b> tracker. Both are defeated only when that tracker is full.",
+  "characters.maggie.passive1.description": "<p>The bloodsisters share 1 <b>Damage</b> tracker. Both are defeated only when that tracker is full.</p>",
 
   "characters.ella.name": "Ella",
   "characters.ella.special1.name": "Rapid bite",
@@ -151,7 +151,7 @@
   "characters.ella.special4.name": "Swift leap",
   "characters.ella.special4.description": "<p><i>Ella flies through the air with the grace of an acrobat.</i></p><b>Attack</b><p>(Self) +1 <b>Initiative</b>, +1 <b>Movement</b>.</p>",
   "characters.ella.passive1.name": "Blood bond",
-  "characters.ella.passive1.description": "The bloodsisters share 1 <b>Damage</b> tracker. Both are defeated only when that tracker is full.",
+  "characters.ella.passive1.description": "<p>The bloodsisters share 1 <b>Damage</b> tracker. Both are defeated only when that tracker is full.</p>",
 
   "characters.jimmySmythe.name": "Jimmy Smythe",
   "characters.jimmySmythe.special1.name": "Mist form",
@@ -504,11 +504,11 @@
 
   "deck.animal.charge1.typeText": "Attack",
   "deck.animal.charge1.title": "Charge",
-  "deck.animal.charge1.description": "<p>(Target) +2 <b>Damage</b>, -1 <b>Initiative</b></p>.",
+  "deck.animal.charge1.description": "<p>(Target) +2 <b>Damage</b>, -1 <b>Initiative</b>.</p>",
 
   "deck.animal.charge2.typeText": "Attack",
   "deck.animal.charge2.title": "Charge",
-  "deck.animal.charge2.description": "<p>(Self) +1 <b>Movement</b></p><p>(Target) +1 <b>Damage</b></p>.",
+  "deck.animal.charge2.description": "<p>(Self) +1 <b>Movement</b></p><p>(Target) +1 <b>Damage</b>.</p>",
 
   "deck.animal.tear1.typeText": "Attack",
   "deck.animal.tear1.title": "Tear",
@@ -516,7 +516,7 @@
 
   "deck.animal.tear2.typeText": "Attack",
   "deck.animal.tear2.title": "Tear",
-  "deck.animal.tear2.description": "<p>(Self) -1 <b>RESISTANCE</b>,</p><p>(Target) +2 <b>Damage</b></p>.",
+  "deck.animal.tear2.description": "<p>(Self) -1 <b>RESISTANCE</b>,</p><p>(Target) +2 <b>Damage</b>.</p>",
 
   "deck.animal.bite1.typeText": "Attack",
   "deck.animal.bite1.title": "Bite",
@@ -588,11 +588,11 @@
 
   "deck.authority.uppercut1.typeText": "Attack",
   "deck.authority.uppercut1.title": "Hook",
-  "deck.authority.uppercut1.description": "<p>(Target) +1 <b>Damage</b>.",
+  "deck.authority.uppercut1.description": "<p>(Target) +1 <b>Damage</b>.</p>",
 
   "deck.authority.uppercut2.typeText": "Attack",
   "deck.authority.uppercut2.title": "Hook",
-  "deck.authority.uppercut2.description": "<p>(Target) +1 <b>Damage</b>.",
+  "deck.authority.uppercut2.description": "<p>(Target) +1 <b>Damage</b>.</p>",
 
   "deck.authority.stick.typeText": "Attack",
   "deck.authority.stick.title": "Stick",
@@ -756,7 +756,7 @@
   "character.menu.changePhase": "Change phase",
   "character.menu.remove": "Remove",
 
-  "character.combatCard.placeholder": "Combat Card",
+  "character.combatCard.placeholder": "Draw Combat Card",
 
   "addCharacterModal.search.placeholder": "Search"
 }

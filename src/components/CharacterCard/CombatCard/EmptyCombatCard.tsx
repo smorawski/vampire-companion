@@ -1,9 +1,13 @@
 import { FormattedMessage } from "react-intl";
 import SmallCard from "../../Card/SmallCard";
 
-const EmptyCombatCard = () => {
+interface EmptyCombatCardProps {
+  onClick: () => void;
+}
+
+const EmptyCombatCard = ({ onClick }: EmptyCombatCardProps) => {
   return (
-    <SmallCard empty>
+    <SmallCard empty onClick={onClick}>
       <FormattedMessage id="character.combatCard.placeholder" />
     </SmallCard>
   );

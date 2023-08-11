@@ -1,7 +1,7 @@
 import { createContext, useCallback, useState } from "react";
 import { Card, DeckType, NumberOfPlayers } from "../data/types";
 import dataProvider from "../data/dataProvider";
-import { shuffleArray } from "../utils/shuffleArray";
+import deckManipulator, { DeckState } from "./deckManipulator";
 
 interface ScenarioCharacter {
   id: string;
@@ -10,12 +10,12 @@ interface ScenarioCharacter {
   card?: Card;
 }
 
-type DeckState = Record<DeckType, { deck: Array<Card>; discard: Array<Card> }>;
+export type DecksStates = Record<DeckType, DeckState>;
 
 interface ScenarioContext {
   characters: Record<string, ScenarioCharacter>;
   numberOfPlayers: NumberOfPlayers;
-  decks: null | DeckState;
+  decks: null | DecksStates;
   addCharacter: (characterId: string) => void;
   removeCharacter: (characterId: string) => void;
   woundCharacter: (characterId: string) => void;
@@ -23,6 +23,7 @@ interface ScenarioContext {
   changeCharacterPhase: (characterId: string) => void;
   changeNumberOfPlayers: (numberOfPlayers: NumberOfPlayers) => void;
   drawCard: (characterId: string) => void;
+  discardCard: (characterId: string) => void;
 }
 
 export const ScenarioContext = createContext<ScenarioContext>({
@@ -36,6 +37,7 @@ export const ScenarioContext = createContext<ScenarioContext>({
   changeCharacterPhase: () => null,
   changeNumberOfPlayers: () => null,
   drawCard: () => null,
+  discardCard: () => null,
 });
 
 interface ScenarioContextProviderProps {
@@ -54,12 +56,12 @@ const ScenarioContextProvider = ({
   const initialDeckState = Object.values(DeckType).reduce((acc, deckType) => {
     const deck = dataProvider.getDeck(deckType);
     if (deck) {
-      acc[deckType] = { deck: shuffleArray(deck.cards), discard: [] };
+      acc[deckType] = deckManipulator.createDeck(deck.cards);
     }
     return acc;
-  }, {} as DeckState);
+  }, {} as DecksStates);
 
-  const [decks, setDecks] = useState<DeckState>(initialDeckState);
+  const [decks, setDecks] = useState<DecksStates>(initialDeckState);
 
   const addCharacter = useCallback(
     (characterId: string) => {
@@ -138,31 +140,71 @@ const ScenarioContextProvider = ({
       if (!characterData) {
         return;
       }
-      const characterDeck = decks[characterData.combatDeck];
+      let characterDeck = decks[characterData.combatDeck];
       if (!characterDeck) {
         return;
       }
 
       // reshuffle if no cards available
+      if (characterDeck.deck.length <= 0) {
+        characterDeck = deckManipulator.reshuffleDeck(characterDeck);
+      }
 
       const card = { ...characterDeck.deck[0] };
 
-      decks[characterData.combatDeck] = {
-        deck: decks[characterData.combatDeck].deck.filter(
-          ({ id }) => id !== card.id
-        ),
-        discard: [...decks[characterData.combatDeck].discard, card],
-      };
+      const previousCharacterCard = characters[characterId].card;
 
-      setDecks({ ...decks });
+      // discard previous card
+      if (previousCharacterCard) {
+        characterDeck = deckManipulator.discardCard(
+          previousCharacterCard,
+          characterDeck
+        );
+      }
+
+      characterDeck = deckManipulator.drawCard(card, characterDeck);
+
+      setDecks({ ...decks, [characterData.combatDeck]: characterDeck });
 
       characters[characterId].card = card;
 
       setCharacters({ ...characters });
-      console.log(characters);
-      console.log(decks);
     },
     [characters, decks, numberOfPlayers]
+  );
+
+  const discardCard = useCallback(
+    (characterId: string) => {
+      const cardToDiscard = characters[characterId].card;
+
+      if (!cardToDiscard) {
+        return;
+      }
+
+      const characterData = dataProvider.getCharacter(
+        characterId,
+        numberOfPlayers
+      );
+
+      if (!characterData) {
+        return;
+      }
+
+      const characterDeck = decks[characterData.combatDeck];
+
+      if (!characterDeck) {
+        return;
+      }
+
+      const newDeck = deckManipulator.discardCard(cardToDiscard, characterDeck);
+
+      setDecks({ ...decks, [characterData.combatDeck]: newDeck });
+
+      delete characters[characterId].card;
+
+      setCharacters({ ...characters });
+    },
+    [characters, decks, setCharacters, setDecks]
   );
 
   return (
@@ -174,6 +216,7 @@ const ScenarioContextProvider = ({
         addCharacter,
         removeCharacter,
         drawCard,
+        discardCard,
         woundCharacter,
         healCharacter,
         changeCharacterPhase,

@@ -5,6 +5,7 @@ import SmallCard from "../../Card/SmallCard";
 import styles from "./CombatCard.module.css";
 import TargetIcon from "../../Icons/Target";
 import IconWithText from "../../Icons/IconWithText/IconWithText";
+import CrossIcon from "../../Icons/Cross";
 
 interface CombatCardProps {
   typeText?: string;
@@ -12,6 +13,7 @@ interface CombatCardProps {
   description?: string;
   target?: Targeting;
   type: CardType;
+  onDiscard: () => void;
 }
 
 const CombatCard = ({
@@ -20,6 +22,7 @@ const CombatCard = ({
   typeText,
   description,
   target,
+  onDiscard,
 }: CombatCardProps) => {
   const titleString =
     title ||
@@ -32,16 +35,21 @@ const CombatCard = ({
     <SmallCard>
       <div className={styles.container}>
         <div className={styles.header}>
-          {typeText && (
-            <span className={styles.cardType}>
-              {intl.formatMessage({ id: typeText })}
-            </span>
-          )}
-          {titleString && <FormattedMessage id={titleString} tagName="h2" />}
+          <div>
+            {typeText && (
+              <span className={styles.cardType}>
+                {intl.formatMessage({ id: typeText })}
+              </span>
+            )}
+            {titleString && <FormattedMessage id={titleString} tagName="h2" />}
+          </div>
+          <div onClick={onDiscard}>
+            <CrossIcon />
+          </div>
         </div>
         <div className={styles.content}>
           {description && (
-            <p
+            <div
               dangerouslySetInnerHTML={{
                 __html: intl.formatMessage({ id: description }),
               }}
