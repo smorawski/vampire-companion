@@ -23,8 +23,22 @@ I have only a few vague ideas for future work on this app.
 4. Afflictions tracker - give the option to add affliction tokens to characters
 5. Any other further suggestions
 
+## Builds
+
+I am not planning on hosting this app anywhere (at least for now). Feel free to do it on your own, maybe on a local server. With every release, I'll provide a zip file with a build that can be simply executed with a browser. Alternatively, you can clone the repo locally and create those builds on your own, or run a dev server with the application.
+
+### Run build
+
+A zip file should contain an `index.html`. Just run it with your browser
+
+### Create your own build
+
+1. Make sure you have `node` installed
+2. Run `npm i` (or any other package manager like `pnpm` or `yarn`)
+3. Run `npm run buildLocal`
+
 ## Background
 
-Feel free
+Feel free to clone, fork, reuse or contribute. I may have less time in the next couple of weeks.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
