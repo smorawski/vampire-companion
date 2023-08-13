@@ -7,8 +7,20 @@ This is a robust companion app for Vampire: the Masquerade - CHAPTERS boardgame.
 Features:
 
 - set up character cards
+
+![Setup characters](./images/add-characters.gif)
+
 - track down their wounds
+
+![Track wounds](./images/wounds.gif)
+
 - draw their combat cards
+
+![Combat cards](./images/draw-cards.gif)
+
+In case of problems with readability, utilize browser zoom functionality
+
+![Combat cards](./images/zoom.gif)
 
 Supported languages:
 Currently only the English version is available, although I'll gladly accept translation strings for other languages (check out `src/translations/en.json` file)
