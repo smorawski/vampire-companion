@@ -14,3 +14,11 @@
 .appStatus > div:last-child {
   margin-right: 0px;
 }
+
+.button {
+  padding: 9px;
+  border-radius: 5px;
+  background-color: white;
+  align-self: center;
+  cursor: pointer;
+}

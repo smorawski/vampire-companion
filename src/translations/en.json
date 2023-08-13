@@ -757,7 +757,10 @@
   "character.menu.remove": "Remove",
 
   "character.combatCard.placeholder": "Draw Combat Card",
-  "character.combatCard.unrevealed": "Reveal Combat Card",
+  "character.combatCard.revealCard": "Reveal Card",
 
-  "addCharacterModal.search.placeholder": "Search"
+  "addCharacterModal.search.placeholder": "Search",
+
+  "appMenu.resetDecks": "Discard & Reshuffle",
+  "appMenu.drawCards": "Draw Cards"
 }

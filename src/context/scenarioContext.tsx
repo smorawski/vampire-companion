@@ -1,4 +1,5 @@
 import { createContext, useCallback, useState } from "react";
+import _cloneDeep from "lodash/cloneDeep";
 import { Card, DeckType, NumberOfPlayers } from "../data/types";
 import dataProvider from "../data/dataProvider";
 import deckManipulator, { DeckState } from "./deckManipulator";
@@ -24,6 +25,8 @@ interface ScenarioContext {
   changeNumberOfPlayers: (numberOfPlayers: NumberOfPlayers) => void;
   drawCard: (characterId: string) => void;
   discardCard: (characterId: string) => void;
+  resetDecks: () => void;
+  drawCards: () => void;
 }
 
 export const ScenarioContext = createContext<ScenarioContext>({
@@ -38,6 +41,8 @@ export const ScenarioContext = createContext<ScenarioContext>({
   changeNumberOfPlayers: () => null,
   drawCard: () => null,
   discardCard: () => null,
+  resetDecks: () => null,
+  drawCards: () => null,
 });
 
 interface ScenarioContextProviderProps {
@@ -53,15 +58,16 @@ const ScenarioContextProvider = ({
 
   const [numberOfPlayers, setNumberOfPlayers] = useState(NumberOfPlayers.Four);
 
-  const initialDeckState = Object.values(DeckType).reduce((acc, deckType) => {
-    const deck = dataProvider.getDeck(deckType);
-    if (deck) {
-      acc[deckType] = deckManipulator.createDeck(deck.cards);
-    }
-    return acc;
-  }, {} as DecksStates);
+  const initializeDeckState = () =>
+    Object.values(DeckType).reduce((acc, deckType) => {
+      const deck = dataProvider.getDeck(deckType);
+      if (deck) {
+        acc[deckType] = deckManipulator.createDeck(deck.cards);
+      }
+      return acc;
+    }, {} as DecksStates);
 
-  const [decks, setDecks] = useState<DecksStates>(initialDeckState);
+  const [decks, setDecks] = useState<DecksStates>(initializeDeckState());
 
   const addCharacter = useCallback(
     (characterId: string) => {
@@ -75,10 +81,14 @@ const ScenarioContextProvider = ({
 
   const removeCharacter = useCallback(
     (characterId: string) => {
+      const character = characters[characterId];
+      if (character && character.card) {
+        discardCard(characterId);
+      }
       delete characters[characterId];
       setCharacters({ ...characters });
     },
-    [setCharacters, characters]
+    [setCharacters, characters, decks]
   );
 
   const woundCharacter = useCallback(
@@ -140,7 +150,7 @@ const ScenarioContextProvider = ({
       if (!characterData) {
         return;
       }
-      let characterDeck = decks[characterData.combatDeck];
+      let characterDeck = _cloneDeep(decks[characterData.combatDeck]);
       if (!characterDeck) {
         return;
       }
@@ -164,9 +174,9 @@ const ScenarioContextProvider = ({
 
       characterDeck = deckManipulator.drawCard(card, characterDeck);
 
-      setDecks({ ...decks, [characterData.combatDeck]: characterDeck });
-
       characters[characterId].card = card;
+
+      setDecks({ ...decks, [characterData.combatDeck]: characterDeck });
 
       setCharacters({ ...characters });
     },
@@ -198,14 +208,74 @@ const ScenarioContextProvider = ({
 
       const newDeck = deckManipulator.discardCard(cardToDiscard, characterDeck);
 
-      setDecks({ ...decks, [characterData.combatDeck]: newDeck });
-
       delete characters[characterId].card;
+
+      setDecks({ ...decks, [characterData.combatDeck]: newDeck });
 
       setCharacters({ ...characters });
     },
     [characters, decks, setCharacters, setDecks]
   );
+
+  const resetDecks = useCallback(() => {
+    setDecks(initializeDeckState());
+    const updatedCharacters = Object.keys(characters).reduce(
+      (acc, currentKey) => {
+        return {
+          ...acc,
+          [currentKey]: {
+            ...characters[currentKey],
+            card: undefined,
+          },
+        };
+      },
+      {} as Record<string, ScenarioCharacter>
+    );
+    setCharacters(updatedCharacters);
+  }, [characters, setCharacters, setDecks]);
+
+  const drawCards = useCallback(() => {
+    const workingDeck = _cloneDeep(decks);
+    const workingCharacters = _cloneDeep(characters);
+    Object.keys(workingCharacters).forEach((characterId) => {
+      const characterData = dataProvider.getCharacter(
+        characterId,
+        numberOfPlayers
+      );
+      if (!characterData) {
+        return;
+      }
+      let characterDeck = workingDeck[characterData.combatDeck];
+      if (!characterDeck) {
+        return;
+      }
+
+      // reshuffle if no cards available
+      if (characterDeck.deck.length <= 0) {
+        characterDeck = deckManipulator.reshuffleDeck(characterDeck);
+      }
+
+      const card = { ...characterDeck.deck[0] };
+
+      const previousCharacterCard = workingCharacters[characterId].card;
+
+      // discard previous card
+      if (previousCharacterCard) {
+        characterDeck = deckManipulator.discardCard(
+          previousCharacterCard,
+          characterDeck
+        );
+      }
+
+      characterDeck = deckManipulator.drawCard(card, characterDeck);
+      workingDeck[characterData.combatDeck] = characterDeck;
+
+      workingCharacters[characterId].card = card;
+    });
+
+    setCharacters(workingCharacters);
+    setDecks(workingDeck);
+  }, [characters, decks, setCharacters, setDecks]);
 
   return (
     <ScenarioContext.Provider
@@ -221,6 +291,8 @@ const ScenarioContextProvider = ({
         healCharacter,
         changeCharacterPhase,
         changeNumberOfPlayers,
+        resetDecks,
+        drawCards,
       }}
     >
       {children}
