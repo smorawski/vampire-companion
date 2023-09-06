@@ -1,0 +1,766 @@
+{
+  "characters.uncannySoldier.name": "Étrange Soldat",
+  "characters.uncannySoldier.special1.name": "Réunion de famille",
+  "characters.uncannySoldier.special1.description": "<p><i>Tu rejoindras ton frère bientôt.</i></p><p><b>Attaque</b></p><p>(Cible) +2 <b>Dégats</b></p>",
+
+  "characters.thug.name": "Voyou",
+  "characters.thug.special1.name": "Poignardage",
+  "characters.thug.special1.description": "<p><i>Un coup de couteau rapide et violent.</i></p><p><b>Attaque</b></p><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.thugLeader.name": "Chef des Voyous",
+  "characters.thugLeader.special1.name": "Rebelle stoïque",
+  "characters.thugLeader.special1.description": "<p><i>« J'emmerde le système, et je t'emmerde toi AUSSI ! »</i></p><p><b>Attaque</b></p><p>(Cible) +1 <b>Dégât</b>,</p><p>(Soi) +1 <b>Résistance</b>.</p>",
+
+  "characters.oldVagrant.name": "Vieux Clochard",
+  "characters.oldVagrant.special1.name": "Répond à la pelle",
+  "characters.oldVagrant.special1.description": "<p><i>Un coup de pelle sur gueule.</i></p><p><b>Attaque</b></p><p>(Cible) +2 <b>Dégâts</b>,</p><p>-1 <b>Initiative</b></p>",
+
+  "characters.streetMuscle.name": "Brute",
+  "characters.streetMuscle.special1.name": "Coup injuste",
+  "characters.streetMuscle.special1.description": "<p><i>Un coup de poing percutant sur la gorge.</i></p><p><b>Attaque</b></p><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.viciousDobermann.name": "Doberman Vicieux",
+  "characters.viciousDobermann.special1.name": "Morsures enragées",
+  "characters.viciousDobermann.special1.description": "<p>Cible : La plus blessée</p><p><i>Une série de morsures rapides et dévastatrices.</i></p><p><b>Attaque</b></p><p>(Cible) +2 <b>Dégâts</b></p>",
+
+  "characters.enragedPitbull.name": "Pitbull Enragé",
+  "characters.enragedPitbull.special1.name": "Mâchoire d'acier",
+  "characters.enragedPitbull.special1.description": "<p>Cible : Initiative la plus haute</p><p><i>Une morsure précise et très douloureuse.</i></p><p><b>Attaque</b></p><p>(Cible) +1 <b>Dégât</b>,</p><p>-1 <b>Initiative</b></p>",
+
+  "characters.yumaMckenzy.name": "Yuma McKenzy",
+  "characters.yumaMckenzy.special1.name": "Rush alpha",
+  "characters.yumaMckenzy.special1.description": "<p>Cible : La plus blessée</p><p><i>Se précipite sous forme de loup à la gorge de l'ennemi.</i></p><p><b>Attaque</b></p><p>(Soi) +2 <b>Déplacement</b>,</p><p>(Cible) +2 <b>Dégâts</b></p>",
+  "characters.yumaMckenzy.special2.name": "Forme de brume",
+  "characters.yumaMckenzy.special2.description": "<p>Cible : La moins blessée</p><p><b>Attaque</b></p><p>(Soi) +4 <b>Déplacement</b>,</p><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.watchman.name": "Gardien",
+  "characters.watchman.special1.name": "Coup incapacitant",
+  "characters.watchman.special1.description": "<p>Cible : La plus blessée</p><p><i>Un coup que vous sentirez demain.</i></p><p><b>Attaque</b></p><p>(Cible) +1 <b>Dégât</b></p>",
+  "characters.watchman.special2.name": "Tout pour le tout",
+  "characters.watchman.special2.description": "<p>Cible : Initiative la plus haute</p><p><i>Un puissant coup dans les côtes.</i></p><p><b>Attaque</b></p><p>(Cible) +2 <b>Dégâts</b></p>",
+
+  "characters.securityGuard.name": "Garde de Sécurité",
+  "characters.securityGuard.special1.name": "Plaquage",
+  "characters.securityGuard.special1.description": "<p><i>Comme au hockey.</i></p><p><b>Attaque</b></p><p>(Cible) +2 <b>Dégâts</b></p>",
+  "characters.securityGuard.special2.name": "Coup incapacitant",
+  "characters.securityGuard.special2.description": "<p>Cible : La plus blessée</p><p><i>Un coup que vous sentirez demain.</i></p><p><b>Attaque</b></p><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.1stRatSwarm.name": "1re Nuée de Rats",
+  "characters.1stRatSwarm.special1.name": "Morsure de vermines",
+  "characters.1stRatSwarm.special1.description": "<p><i>De fortes incisives transpercent votre chair.</i></p><p><b>Attaque</b></p><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.2ndRatSwarm.name": "2e Nuée de Rats",
+  "characters.2ndRatSwarm.special1.name": "Morsure infectieuse",
+  "characters.2ndRatSwarm.special1.description": "<p><i>De fortes incisives transpercent votre chair.</i></p><p><b>Attaque</b></p><p>(Cible) +1 jeton <b>POISON</b></p>",
+
+  "characters.3rdRatSwarm.name": "3e Nuée de Rats",
+  "characters.3rdRatSwarm.special1.name": "Vague bruyante",
+  "characters.3rdRatSwarm.special1.description": "<p><i>« Ils sont partout ! »</i></p><p><b>Attaque</b></p><p>(Cible) -1 <b>Initiative</b></p>",
+
+  "characters.rat.name": "Rat",
+  "characters.rat.special1.name": "Morsure de la vermine",
+  "characters.rat.special1.description": "<p><i>De fortes incisives transpercent votre chair.</i></p><p><b>Attaque</b></p><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.1stSIAgent.name": "1ère Agente D.I.",
+  "characters.1stSIAgent.special1.name": "Garde d'acier",
+  "characters.1stSIAgent.special1.description": "<p><i>L'agent se prépare à parer vos attaques.</i></p><p><b>Défense</b></p><p>(Soi) +1 <b>Résistance</b></p>",
+  "characters.1stSIAgent.special2.name": "Reste au sol !",
+  "characters.1stSIAgent.special2.description": "<p>Cible : La plus blessée</p><p><i>Un coup dur à la tempe.</i></p><p><b>Attaque</b></p><p>(Cible) +2 <b>Dégâts Inévitables</b></p>",
+
+  "characters.thoughLookingGuard.name": "Garde Coriace",
+  "characters.thoughLookingGuard.special1.name": "Garde d'acier",
+  "characters.thoughLookingGuard.special1.description": "<p><i>L'agent se prépare à parer vos attaques.</i></p><p><b>Défense</b></p><p>(Soi) +1 <b>Résistance</b></p>",
+  "characters.thoughLookingGuard.special2.name": "Reste au sol !",
+  "characters.thoughLookingGuard.special2.description": "<p>Cible : La plus blessée</p><p><i>Un coup dur à la tempe.</i></p><p><b>Attaque</b></p><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.distractedGuard.name": "Garde Distraite",
+  "characters.distractedGuard.special1.name": "Coup de poing faible",
+  "characters.distractedGuard.special1.description": "<p><i>Une attaque sans réelle intention.</i></p><p><b>Attaque</b></p><p>(Cible) +1 <b>Dégât</b>,</p><p>(Soi) -1 <b>Initiative</b></p>",
+
+  "characters.overworkedGuard.name": "Garde Surchargé",
+  "characters.overworkedGuard.special1.name": "Mon café",
+  "characters.overworkedGuard.special1.description": "<p><i>*Boit*</i></p><p><i>\"Aaahh\"</i></p><p><b>Attaque</b></p><p>(Soi) +1 <p>Initiative</b></p>",
+
+  "characters.olderGuard.name": "Vieux Garde",
+  "characters.olderGuard.special1.name": "Des années d'expertise",
+  "characters.olderGuard.special1.description": "<p><i>Une série de coups exécutée à merveille.</i></p><p><b>Attaque</b></p><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.rookieGuard.name": "Nouveau Garde",
+  "characters.rookieGuard.special1.name": "Coup de pied de novice",
+  "characters.rookieGuard.special1.description": "<p><i>Un coup de pied maladroit, laissant le garde exposé.</i></p><p><b>Attaque</b></p><p>(Cible) +1 <b>Dégât</b>,</p><p>(Soi) -1 <b>Résistance</b></p>",
+
+  "characters.gangMember.name": "Membre de Gang",
+  "characters.gangMember.special1.name": "Poignardage",
+  "characters.gangMember.special1.description": "<p><i>Un coup de couteau rapide et violent.</i></p><p><b>Attaque</b></p><p>(Cible) +1 <b>Dégât</b>",
+
+  "characters.werewolf.name": "Loup-Garou",
+  "characters.werewolf.special1.name": "Rage",
+  "characters.werewolf.special1.description": "<p><i>Le loup-garou ferme sa mâchoire puissante sur sa proie.</i></p><p><b>Défense</b></p><p>(Cible) +2 <b>Dégâts</b></p>",
+  "characters.werewolf.special2.name": "Tremblement de terre",
+  "characters.werewolf.special2.description": "<p><i>Les murs du repaire tremblent lorsque le loup-garou frappe le sol avec ses poings.</i></p><p><b>Défense</b></p><p>(Tous) +1 jeton <b>IMMOBILISATION</b></p>",
+  "characters.werewolf.special3.name": "Fou de rage",
+  "characters.werewolf.special3.description": "<p><i>La bête frappe l'air de ses griffes anormalement longues et acérées comme des rasoirs.</i></p><p><b>Défense</b></p><p>(Toute cible adjacente) +4 <b>Dégâts</b></p>",
+  "characters.werewolf.special4.name": "Choc de terre",
+  "characters.werewolf.special4.description": "<p><i>Le sol tremble sous les pas de la bête.</i></p><p><b>Défense</b></p><p>(Tous) +1 jeton <b>IMMOBILISATION</b></p>",
+
+  "characters.mrDamp.name": "Monsieur Damp",
+  "characters.mrDamp.special1.name": "Dissipation",
+  "characters.mrDamp.special1.description": "<p><i>Apparaît derrière le loup-garou, son couperet logé dans le dos de ce dernier.</i></p><p><b>Attaque</b></p><p>Se <b>téléporte</b> derrière la cible.</p><p>(Cible) +1 <b>Dégât</b></p>",
+  "characters.mrDamp.special2.name": "Folie totale",
+  "characters.mrDamp.special2.description": "<p><i>Un murmure et la bête perd le contrôle d'elle-même.</i></p><p><b>Attaque</b></p><p>(Cible) +1 jeton <b>SAIGNEMENT</b> et +2 jetons <b>RALENTISSEMENT</b>, -1 dégât sur sa prochaine <b>attaque</b>.</p>",
+
+  "characters.william.name": "William",
+  "characters.william.special1.name": "Fracasser",
+  "characters.william.special1.description": "<p><i>La meilleure attaque est pas de défense.</i></p><p><b>Attaque</b></p><p>(Soi) -1 <b>Résistance</b>, +1 <b>Déplacement</b>.</p><p>(Cible) +1 <b>Dégât</b></p>",
+  "characters.william.special2.name": "Bris de genou",
+  "characters.william.special2.description": "<p><i>Lorsque vous devez envoyer un message.</i></p><p><b>Attaque</b></p><p>(Cible) +1 <b>Dégât</b>, +1 jeton <b>IMMOBILISATION</b></p>",
+
+  "characters.locke.name": "Locke",
+  "characters.locke.special1.name": "Plongeon",
+  "characters.locke.special1.description": "<p><i>Un saut en l'air impressionnant, suivi d'une plongée terrifiante.</i></p><p><b>Attaque</b></p><p>(Soi) +1 <b>Initiative</b></p><p>(Cible) +1 <b>Dégât</b></p>",
+  "characters.locke.special2.name": "Ruée",
+  "characters.locke.special2.description": "<p><i>Locke vole vers vous. Et ne s'arrête jamais.</i></p><p><b>Attaque</b></p><p>(Soi) +3 <b>Déplacement</b></p>",
+
+  "characters.sid.name": "Sid",
+  "characters.sid.special1.name": "Saignée",
+  "characters.sid.special1.description": "<p><i>Vous pouvez sentir le Vitae vous quitter pour nourrir le Tremere.</i></p><p><b>Attaque</b></p><p>(Cible) +1 <b>Dégât Inévitable</b>, +1 <b>Soif</b>.</p>",
+  "characters.sid.special2.name": "Malédiction du sang",
+  "characters.sid.special2.description": "<p><i>Votre sang bout dans vos veines.</i></p><p><b>Attaque</b></p><p>(Cible) +1 jeton <b>SAIGNEMENT</b>, -1 <b>Initiative</b>.</p>",
+  "characters.sid.passive1.name": "Châtiment",
+  "characters.sid.passive1.description": "<p>L'attaquant est repoussé de 2 <b>HEX</b>.</p>",
+
+  "characters.maggie.name": "Maggie",
+  "characters.maggie.special1.name": "Morsure vicieuse",
+  "characters.maggie.special1.description": "<p><i>Une attaque visant vos points faibles.</i></p><b>Attaque</b><p>(Cible) +1 <b>Soif</b>, +1 <b>Dégât</b>.</p>",
+  "characters.maggie.special2.name": "Saut écrasant",
+  "characters.maggie.special2.description": "<p><i>Saute dans la mélée.</i></p><b>Attaque</b><p>(Soi) +1 <b>Initiative</b>, (Cible) +1 <b>Dégât</b>.</p>",
+  "characters.maggie.special3.name": "Morsure vicieuse",
+  "characters.maggie.special3.description": "<p><i>Maggie fonce droit sur votre jugulaire.</i></p><b>Attaque</b><p>(Cible) +1 <b>Soif</b>, +1 <b>Dégât</b>.</p>",
+  "characters.maggie.special4.name": "Saut écrasant",
+  "characters.maggie.special4.description": "<p><i>Avec ses deux pieds, elle vise à vous achever.</i></p><b>Attaque</b><p>(Soi) +1 <b>Initiative</b>, (Cible) +1 <b>Dégât</b>.</p>",
+  "characters.maggie.passive1.name": "Lien de sang",
+  "characters.maggie.passive1.description": "<p>Les soeurs de sang partagent le même marqueur de <b>dégâts</b>. Elles sont toutes les deux vaincues lorsqu'il est rempli.</p>",
+
+  "characters.ella.name": "Ella",
+  "characters.ella.special1.name": "Bouchée rapide",
+  "characters.ella.special1.description": "<p><i>Une peite bouchée pour une collation rapide.</i></p><b>Attaque</b><p>(Soi) +1 <b>Mouvement</b>, (Cible) +1 <b>Soif</b>.</p>",
+  "characters.ella.special2.name": "Bond",
+  "characters.ella.special2.description": "<p><i>Saute loin de la mélée.</i></p><b>Attaque</b><p>(Soi) +1 <b>Initiative</b>, +1 <b>Déplacement</b>.</p>",
+  "characters.ella.special3.name": "Morsures rapides",
+  "characters.ella.special3.description": "<p><i>Elle se fiche de savoir où elle mord, tant qu'elle le fait.</i></p><b>Attaque</b><p>(Soi) +1 <b>Déplacement</b>, (Cible) +1 <b>Soif</b>.</p>",
+  "characters.ella.special4.name": "Saut rapide",
+  "characters.ella.special4.description": "<p><i>Ella vole dans les airs avec la grâce d'une acrobate.</i></p><b>Attaque</b><p>(Soi) +1 <b>Initiative</b>, +1 <b>Déplacement</b>.</p>",
+  "characters.ella.passive1.name": "Lien de sang",
+  "characters.ella.passive1.description": "<p>Les soeurs de sang partagent le même marqueur de <b>dégâts</b>. Elles sont toutes les deux vaincues lorsqu'il est rempli.</p>",
+
+  "characters.jimmySmythe.name": "Jimmy Smythe",
+  "characters.jimmySmythe.special1.name": "Forme de brume",
+  "characters.jimmySmythe.special1.description:": "<p><i>Jimmy se confond avec la fumée ambiante et disparaît.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b>, +1 jeton <b>RALENTISSEMENT</b>.</p>",
+  "characters.jimmySmythe.special2.name": "Griffes déchirantes",
+  "characters.jimmySmythe.special2.description": "<p><i>Avec des serres acérées, Jimmy vous prend de la chair et des tripes.</i></p><b>Attaque</b><p>(Cible) +1 jeton <b>SAIGNEMENT</b></p>",
+
+  "characters.1stShamblingRisenDead.name": "1er Mort-vivant Vagabond",
+  "characters.1stShamblingRisenDead.special1.name": "Morsure moisie",
+  "characters.1stShamblingRisenDead.special1.description": "<p><i>Une morsure puissante au bras qui laisse des dents dans votre chair.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.2ndShamblingRisenDead.name": "2e Mort-vivant Vagabond",
+  "characters.2ndShamblingRisenDead.special1.name": "Morsure moisie",
+  "characters.2ndShamblingRisenDead.special1.description": "<p><i>Une morsure puissante au bras qui laisse des dents dans votre chair.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.3rdShamblingRisenDead.name": "3e Mort-vivant Vagabond",
+  "characters.3rdShamblingRisenDead.special1.name": "Morsure moisie",
+  "characters.3rdShamblingRisenDead.special1.description": "<p><i>Une morsure puissante au bras qui laisse des dents dans votre chair.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.4thShamblingRisenDead.name": "4e Mort-vivant Vagabond",
+  "characters.4thShamblingRisenDead.special1.name": "Morsure moisie",
+  "characters.4thShamblingRisenDead.special1.description": "<p><i>Une morsure puissante au bras qui laisse des dents dans votre chair.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.1stHulkingRisenDead.name": "1er Mort-Vivant Géant",
+  "characters.1stHulkingRisenDead.special1.name": "Saut putride",
+  "characters.1stHulkingRisenDead.special1.description": "<p>Cible : La plus blessée</p><p><i>La masse en décomposition se jette sur vous.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.2ndHulkingRisenDead.name": "2e Mort-Vivant Géant",
+  "characters.2ndHulkingRisenDead.special1.name": "Saut putride",
+  "characters.2ndHulkingRisenDead.special1.description": "<p>Cible : La plus blessée</p><p><i>La masse en décomposition se jette sur vous.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.3rdHulkingRisenDead.name": "3e Mort-Vivant Géant",
+  "characters.3rdHulkingRisenDead.special1.name": "Saut putride",
+  "characters.3rdHulkingRisenDead.special1.description": "<p>Cible : La plus blessée</p><p><i>La masse en décomposition se jette sur vous.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.4thHulkingRisenDead.name": "4e Mort-Vivant Géant",
+  "characters.4thHulkingRisenDead.special1.name": "Saut putride",
+  "characters.4thHulkingRisenDead.special1.description": "<p>Cible : La plus blessée</p><p><i>La masse en décomposition se jette sur vous.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.1stCrowd.name": "1re Foule",
+  "characters.1stCrowd.special1.name": "Tumulte",
+  "characters.1stCrowd.special1.description": "<p><i>Une collection chaotique de coups de poing et de pied.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.2ndCrowd.name": "2e Foule",
+  "characters.2ndCrowd.special1.name": "Tumulte",
+  "characters.2ndCrowd.special1.description": "<p><i>Une collection chaotique de coups de poing et de pied.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.3rdCrowd.name": "3e Foule",
+  "characters.3rdCrowd.special1.name": "Tumulte",
+  "characters.3rdCrowd.special1.description": "<p>Cible : La plus près</p><p><i>Une collection chaotique de coups de poing et de pied.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.2ndSecurityGuard.name": "2e Garde de Sécurité",
+  "characters.2ndSecurityGuard.special1.name": "Garde d'acier",
+  "characters.2ndSecurityGuard.special1.description": "<p>Cible : Soi</p><p><i>Le garde se prépare à bloquer vos attaques.</i></p><b>Défense</b><p>(Soi) +1 <b>RÉSISTANCE</b>.</p>",
+  "characters.2ndSecurityGuard.special2.name": "Coup incapacitant",
+  "characters.2ndSecurityGuard.special2.description": "<p>Cible : La plus blessée</p><p><i>Un coup que vous sentirez demain.</i></p><b>Attaque</b><p>(Cible) +2 <b>Dégâts</b>.</p>",
+
+  "characters.3rdSecurityGuard.name": "3e Garde de Sécurité",
+  "characters.3rdSecurityGuard.special1.name": "Clé de bras",
+  "characters.3rdSecurityGuard.special1.description": "<p><i>« Arrête de bouger, fils de pute ! »</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.policeOfficer.name": "Policier",
+  "characters.policeOfficer.special1.name": "Coup de semonce",
+  "characters.policeOfficer.special1.description": "<p><i>« Arrêtez-vous ! »</i></p><b>Attaque</b> en <b>Ligne de Vue</b><p>(Cible) +1 jeton <b>RALENTISSEMENT</b></p>",
+
+  "characters.constructionBoss.name": "Chef de Chantier",
+  "characters.constructionBoss.special1.name": "Au travail !",
+  "characters.constructionBoss.special1.description": "<p><i>Le contremaître pousse ses laquais à avancer.</i></p><b>Attaque</b><p>Tous les <b>PNJ HUMAINS</b> gagnent +1 <b>Déplacement</b> jusqu'à la fin du <b>round</b>.</p>",
+
+  "characters.1stConstructionWorker.name": "1er Ouvrier",
+  "characters.1stConstructionWorker.special1.name": "Répoond à la pelle",
+  "characters.1stConstructionWorker.special1.description": "<p><i>Un coup de pelle sur la gueule.</i></p><b>Attaque</b><p>(Cible) +2 <b>Dégâts</b>, -1 <b>Initiative</b>.</p>",
+
+  "characters.2ndConstructionWorker.name": "2e Ouvrier",
+  "characters.2ndConstructionWorker.special1.name": "Avec une brique",
+  "characters.2ndConstructionWorker.special1.description": "<p><i>« Bâtissez-vous une vie ! »</i></p><b>Attaque</b><p>(Cible) +2 jetons <b>RALENTISSEMENT</b></p>",
+
+  "characters.vargas.name": "Vargas",
+  "characters.vargas.special1.name": "Silence de mort",
+  "characters.vargas.special1.description": "<p>Cible : La plus blessée</p><p><i>L'Anarch passe inaperçu, caché dans l'ombre.</i></p><b>Attaque</b><p>(Soi) +2 <b>Déplacement</b>, peut se <b>déplacer</b> à travers les personnages et les <b>alliés</b>.</p>",
+
+  "characters.3rdConstructionWorker.name": "3e Ouvrier",
+  "characters.3rdConstructionWorker.special1.name": "Désengagement total",
+  "characters.3rdConstructionWorker.special1.description": "<p><i>« On me paie pas assez pour ça. »</i></p><b>Attaque</b><p>(Soi) +1 <b>RÉSISTANCE</b>, -2 <b>Initiative</b>.</p>",
+
+  "characters.alexSimard.name": "Alex Simard",
+  "characters.alexSimard.special1.name": "Alchimie : Protéisme",
+  "characters.alexSimard.special1.description": "<p><i>Alex boit une fiole et charge son ennemi.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b>.</p>",
+
+  "characters.banuHaqim.name": "Banu Haqim",
+  "characters.banuHaqim.special1.name": "Attaque sournoise",
+  "characters.banuHaqim.special1.description": "<p><i>Juge, jury, mais surtout bourreau.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b>, -1 <b>Initiative</b>.</p>",
+
+  "characters.vindictiveNosferatu.name": "Nosferatu Vindicative",
+  "characters.vindictiveNosferatu.special1.name": "Appeler la bête",
+  "characters.vindictiveNosferatu.special1.description": "<p><i>« Aucun niveau d'humanité ne peut vous protéger de ce que vous êtes vraiment ! »</i></p><b>Attaque</b><p>(Cible la plus proche) +1 <b>Soif</b>.</p>",
+
+  "characters.hostileGangrel.name": "Gangrel Hostile",
+  "characters.hostileGangrel.special1.name": "Abattre",
+  "characters.hostileGangrel.special1.description": "<p>Cible : Initiative la plus haute</p><p><i>Ils déchirent violemment quelque chose ou quelqu'un.</i></p><b>Attaque</b><p>(Cible) +2 <jetons b>RALENTISSEMENT</b></p>",
+
+  "characters.jimmySmythe2.name": "Jimmy Smythe",
+  "characters.jimmySmythe2.special1.name": "Forme de brume",
+  "characters.jimmySmythe2.special1.description": "<p><i>L'Antre se remplit rapidement de la forme brumeuse de Jimmy.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b>, +1 jeton <b>RALENTISSEMENT</b>.</p>",
+  "characters.jimmySmythe2.special2.name": "Griffes déchirantes",
+  "characters.jimmySmythe2.special2.description": "<p><i>Avec des serres acérées, Jimmy vous prend de la chair et des tripes.</i></p><b>Attaque</b><p>(Cible) +1 jeton <b>SAIGNEMENT</b>.</p>",
+
+  "characters.punkLeader.name": "Leader des Punks",
+  "characters.punkLeader.special1.name": "Coup de poing violent",
+  "characters.punkLeader.special1.description": "<p><i>Vous n'aviez pas besoin de ces dents, n'est-ce pas ?</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b>.</p>",
+
+  "characters.meekPunk.name": "Punk Doux",
+  "characters.meekPunk.special1.name": "Je ne reste pas ici !",
+  "characters.meekPunk.special1.description": "<p><i>Bravoure exemplaire.</i></p><b>Défense</b><p>(Soi) +1 <b>Déplacement</b></p>",
+
+  "characters.skaterBoi.name": "Skateur",
+  "characters.skaterBoi.special1.name": "Kick flip",
+  "characters.skaterBoi.special1.description": "<p><i>Un mouvement trompeur qui incite la cible à baisser sa garde.</i></p><b>Attaque</b><p>(Soi) +1 <b>Initiative</b>.</p>",
+
+  "characters.belligerentPunk.name": "Punk Belliqueux",
+  "characters.belligerentPunk.special1.name": "Barrage de battes",
+  "characters.belligerentPunk.special1.description": "<p><i>Vous ne pouvez pas passer outre la rafale de battes de baseball.</i></p><b>Défense</b><p>(Soi) +1 <b>Résistance</b></p>",
+
+  "characters.brujah.name": "Brujah",
+  "characters.brujah.special1.name": "Flou de mouvement",
+  "characters.brujah.special1.description": "<p><i>Un déplacement si rapide que les mortels ne peuvent le voir.</i></p><b>Attaque</b><p>(Soi) +3 <b>Déplacement</b></p>",
+
+  "characters.lasombra.name": "Lasombra",
+  "characters.lasombra.special1.name": "Aura de noirceur",
+  "characters.lasombra.special1.description": "<p><i>Un linceul sombre enveloppe le vampire.</i></p><b>Attaque</b><p>(Tous les personnages dans une zone de 2 HEX) -2 <b>Initiative</b></p>",
+
+  "characters.ministry.name": "Sacerdoce",
+  "characters.ministry.special1.name": "Peau écailleuse",
+  "characters.ministry.special1.description": "<p><i>La peau du vampire se recouvre d'écailles épaisses.</i></p><b>Défense</b><p>(Soi) +2 <b>Résistance</b>.</p>",
+
+  "characters.frenziedVampire.name": "Vampire Frénétique",
+  "characters.frenziedVampire.special1.name": "Coup affamé",
+  "characters.frenziedVampire.special1.description": "<p>Cible : La plus près</p><p><i>Derrière la douleur, vous pouvez sentir la soif de sang de ce Descendant.</i></p><b>Attaque</b><p>(Cible) +1 <b>Soif</b>, +1 <b>Dégât Inévitable</b>.</p>",
+  "characters.frenziedVampire.special2.name": "Charge vorace",
+  "characters.frenziedVampire.special2.description": "<p><i>Vous n'êtes rien d'autre qu'un repas pour ce vampire.</i></p><b>Attaque</b><p>(Soi) +2 <b>Déplacement</b>,</p><p>(Cible) +1 jeton <b>RALENTISSEMENT</b>.</p>",
+
+  "characters.enzoDeLuca.name": "Enzo De Luca",
+  "characters.enzoDeLuca.special1.name": "Repousser",
+  "characters.enzoDeLuca.special1.description": "<p><i>« Ne m'approche pas ! »</i></p><b>Attaque</b><p>(Cible) <b>Repousse</b> de 2 <b>HEX</b></p>",
+  "characters.enzoDeLuca.special2.name": "Disparition",
+  "characters.enzoDeLuca.special2.description": "<p><i>Enzo disparaît.</i></p><b>Défense</b><p>(Soi) ne peut être ciblé jusqu'à la fin du <b>round</b>.</p>",
+
+  "characters.menacingVagrant.name": "Clochard Menaçant",
+  "characters.menacingVagrant.special1.name": "Maître de l'essaim",
+  "characters.menacingVagrant.special1.description": "<p><i>Avec des gazouillis ignobles, le maître appelle les siens.</i></p><b>Attaque</b><p>Tous les <b>PNJ ANIMAL</b> gagnent +1 niveau d'<b>Attaque</b> jusqu'à la fin du <b>round</b>.</p>",
+
+  "characters.4thRatSwarm.name": "4e Nuée de Rats",
+  "characters.4thRatSwarm.special1.name": "Morsure de la vermine",
+  "characters.4thRatSwarm.special1.description": "<p><i>De fortes incisives transpercent votre chair.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.oldPriest.name": "Vieux Prêtre",
+  "characters.oldPriest.special1.name": "Vade retro",
+  "characters.oldPriest.special1.description": "<p><i>Utilise la foi pour repousser les damnés.</i></p><b>Attaque</b><p>(Cible) <b>Repoussée</b> de 1 <b>HEX</b>.</p>",
+
+  "characters.2ndSIAgent.name": "2e Agent D.I.",
+  "characters.2ndSIAgent.special1.name": "Munitions explosives",
+  "characters.2ndSIAgent.special1.description": "<p>Cible : Initiative la plus basse</p><p><i>Le chasseur utilise notre pire peur contre nous.</i></p><b>Attaque</b> en <b>Ligne de Vue</b><p>(Cible) +1 <b>Dégât Inévitable</b></p>",
+
+  "characters.3rdSIAgent.name": "3e Agent D.I.",
+  "characters.3rdSIAgent.special1.name": "Munitions explosives",
+  "characters.3rdSIAgent.special1.description": "<p>Cible : Initiative la plus haute</p><p><i>Le chasseur utilise notre pire peur contre nous.</i></p><b>Attaque</b> en <b>Ligne de Vue</b><p>(Cible) +1 <b>Dégât Inévitable</b></p>",
+
+  "characters.4thSIAgent.name": "4e Agent D.I.",
+  "characters.4thSIAgent.special1.name": "Garde d'acier",
+  "characters.4thSIAgent.special1.description": "<p><i>L'agent s'apprête à bloquer vos attaques.</i></p><b>Défense</b><p>(Soi) +1 <b>RÉSISTANCE</b>.</p>",
+  "characters.4thSIAgent.special2.name": "Coup de poing assomant",
+  "characters.4thSIAgent.special2.description": "<p>Cible : La plus blessée</p><p><i>Un coup violent à la tête.</i></p><b>Attaque</b><p>(Cible) +2 <b>Dégâts Inévitables</b></p>",
+
+  "characters.fatherTeasdale.name": "Père Teasdale",
+  "characters.fatherTeasdale.special1.name": "Châtiment divin",
+  "characters.fatherTeasdale.special1.description": "<p>Cible : La plus blessée</p><p><i>« Inculquez-leur la peur de Dieu. »</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât Inévitable</b></p>",
+  "characters.fatherTeasdale.special2.name": "Marcher dans la vallée",
+  "characters.fatherTeasdale.special2.description": "<p><i>Le prêtre désespère...</i></p><b>Attaque</b><p>(Soi) +2 <b>Déplacement</b>,</p><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "characters.archbishop.name": "Archevèque",
+  "characters.archbishop.special1.name": "Bouclier de la foi",
+  "characters.archbishop.special1.description": "<p><i>La puissance divine émane de l'autel.</i></p><b>Défense</b><p>(Tous) +1 <b>Dégât</b>, +1 jeton <b>RALENTISSEMENT</b>, <b>repoussé</b> de 3 <b>HEX</b> de l'autel</p>",
+  "characters.archbishop.special2.name": "Prière pieuse",
+  "characters.archbishop.special2.description": "<p><i>Votre Bête fait rage à votre proximité de la Vraie Foi.</i></p><b>Défense</b><p>(Tous) +1 <b>Soif</b></p>",
+
+  "characters.sabbatPriest.name": "Prêtre du Sabbat",
+  "characters.sabbatPriest.special1.name": "Noirceur",
+  "characters.sabbatPriest.special1.description": "<p><i>Ses yeux deviennent noirs alors qu'un épais voile d'ombres vous entoure.</i></p><b>Attaque</b><p>(Tous) -2 <b>Initiative</b>.</p>",
+  "characters.sabbatPriest.special2.name": "Chaînes abyssales",
+  "characters.sabbatPriest.special2.description": "<p><i>Des vrilles d'ombres vous retiennent.</i></p><b>Attaque</b><p>(Tous) +1 jeton <b>RALENTISSEMENT</b></p>",
+  "characters.sabbatPriest.special3.name": "Vide ténébreux",
+  "characters.sabbatPriest.special3.description": "<p>Cible : Initiative la plus haute</p><p><i>Face à la puissance d'Oblivion, vous êtes paralysé par la peur.</i></p><b>Attaque</b><p>(Cible) +1 jeton <b>IMMOBILISATION</b></p>",
+  "characters.sabbatPriest.special4.name": "Étreinte de l'abysse",
+  "characters.sabbatPriest.special4.description": "<p>Cible : Tous</p><b>Attaque</b><p>(Tous) +1 jeton <b>RALENTISSEMENT</b>, <b>attirer</b> 1 HEX vers ce <b>PNJ</b>.</p>",
+  "characters.sabbatPriest.passive1.name": "Toucher nécrotique",
+  "characters.sabbatPriest.passive1.description": "Prenez 1 <b>Dégât Inévitable</b> si vous commencez votre tour sur un <b>HEX</b> adjacent à ce <b>PNJ</b>.",
+  "characters.sabbatPriest.passive2.name": "Aura nécrotique",
+  "characters.sabbatPriest.passive2.description": "Prenez 1 <b>Dégât Inévitable</b> si vous commencez votre tour dans une zone de 2 <b>HEX</b> de ce <b>PNJ</b>.",
+
+  "characters.1stWolf.name": "1er Loup",
+  "characters.1stWolf.special1.name": "Hurlement",
+  "characters.1stWolf.special1.description": "<p><i>\"Awoooo!\"</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b>, Tous les <b>PNJ ANIMAL</b> gagnent +2 <b>Initiative</b></p>",
+
+  "characters.2ndWolf.name": "2e Loup",
+  "characters.2ndWolf.special1.name": "Hurlement",
+  "characters.2ndWolf.special1.description": "<p><i>\"Awawawawa!\"</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b>, Tous les <b>PNJ ANIMAL</b> gagnent +2 <b>Initiative</b></p>",
+
+  "characters.3rdWolf.name": "3e Loup",
+  "characters.3rdWolf.special1.name": "Hurlement",
+  "characters.3rdWolf.special1.description": "<p><i>\"Oooooowoooooo!\"</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b>, Tous les <b>PNJ ANIMAL</b> gagnent +2 <b>Initiative</b></p>",
+
+  "characters.4thWolf.name": "4e Loup",
+  "characters.4thWolf.special1.name": "Hurlement",
+  "characters.4thWolf.special1.description": "<p><i>\"Uwu!\"</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b>, Tous les <b>PNJ ANIMAL</b> gagnent +2 <b>Initiative</b></p>",
+
+  "characters.injuredYuma.name": "Yuma Blessé",
+  "characters.injuredYuma.special1.name": "Morsure désespérée",
+  "characters.injuredYuma.special1.description": "<p><i>Ne coincez jamais un animal sauvage.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât Inévitable</b></p>",
+  "characters.injuredYuma.special2.name": "Rush oméga",
+  "characters.injuredYuma.special2.description": "<p><i>N'ayant rien à perdre, Yuma se jette sur vous.</i></p><b>Attaque</b><p>(Soi) +2 <b>Déplacement</b>,</p><p>(Cible) +2 <b>Dégâts</b></p>",
+
+  "characters.1stGhoul.name": "1re Goule",
+  "characters.1stGhoul.special1.name": "Faire trébucher",
+  "characters.1stGhoul.special1.description": "<p>Cible : Initiative la plus haute</p><p><i>« Je savais que tu ne pouvais pas marcher avec CES chaussures. »</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b>, -1 <b>Initiative</b>.</p>",
+  "characters.1stGhoul.special2.name": "Parle à la main",
+  "characters.1stGhoul.special2.description": "<p><i>*Insérer bruit de dégoût*</i></p><b>Défense</b><p>(Soi) +1 <b>RÉSISTANCE</b>.</p>",
+
+  "characters.2ndGhoul.name": "2e Goule",
+  "characters.2ndGhoul.special1.name": "Coup nuisant",
+  "characters.2ndGhoul.special1.description": "<p>Cible : Initiative la plus haute</p><p><i>Dites adieu à vos tibias.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b>, -1 <b>Initiative</b>.</p>",
+
+  "characters.3rdGhoul.name": "3e Goule",
+  "characters.3rdGhoul.special1.name": "Faire trébucher",
+  "characters.3rdGhoul.special1.description": "<p>Cible : Initiative la plus basse</p><p><i>« Je savais que tu ne pouvais pas marcher avec CES chaussures. »</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b>, -1 <b>Initiative</b>.</p>",
+  "characters.3rdGhoul.special2.name": "Crise de colère",
+  "characters.3rdGhoul.special2.description": "<p><i>\"Comment osez-vous toucher ma maîtresse !\"</i></p><b>Attaque</b><p>(Soi) +1 <b>Déplacement</b></p>",
+
+  "characters.4thGhoul.name": "4e Goule",
+  "characters.4thGhoul.special1.name": "Coup nuisant",
+  "characters.4thGhoul.special1.description": "<p>Cible : Initiative la plus basse</p><p><i>Dites adieu à vos tibias.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b>, -1 <b>Initiative</b>.</p>",
+
+  "characters.bettyDuhamel.name": "Betty Dunhamel",
+  "characters.bettyDuhamel.special1.name": "Réflexes rapides",
+  "characters.bettyDuhamel.special1.description": "<p>Cible : Initiative la plus haute</p><p><i>La harpie frappe avec l'habitation d'un maître des arts martiaux.</i></p><b>Attaque</b><p>(Soi) +1 <b>Déplacement</b>,</p><p>(Cible) -2 <b>Initiative</b>.</p>",
+  "characters.bettyDuhamel.special2.name": "Clairvoyance",
+  "characters.bettyDuhamel.special2.description": "<p><i>Betty sait tout ce que vous vous apprêtez à faire.</i></p><b>Défense</b><p>(Soi) +2 <b>RÉSISTANCE</b>.</p>",
+  "characters.bettyDuhamel.passive1.name": "Majesté",
+  "characters.bettyDuhamel.passive1.description": "Tous les <b>PNJ GOULE</b> gagnent +1 niveau d'<b>Attaque</b> jusqu'à la fin du <b>round</b>.",
+
+  "characters.1stSpiderSwarm.name": "1er Essaim d'Araignée",
+  "characters.1stSpiderSwarm.special1.name": "Enseveli",
+  "characters.1stSpiderSwarm.special1.description": "<p>Cible : Initiative la plus haute</p><p><i>Vous vous retrouvez incapable de bouger, pris dans la toile d'araignée.</i></p><b>Attaque</b> en <b>Ligne de Vue</b><p>(Cible) +1 <b>IMMOBILISATION</b></p>",
+
+  "characters.2ndSpiderSwarm.name": "2e Essaim d'Araignée",
+  "characters.2ndSpiderSwarm.special1.name": "Enseveli",
+  "characters.2ndSpiderSwarm.special1.description": "<p>Cible : Initiative la plus haute</p><p><i>Vous vous retrouvez incapable de bouger, pris dans la toile d'araignée.</i></p><b>Attaque</b> en <b>Ligne de Vue</b><p>(Cible) +1 <b>IMMOBILISATION</b></p>",
+
+  "characters.3rdSpiderSwarm.name": "3e Essaim d'Araignée",
+  "characters.3rdSpiderSwarm.special1.name": "Enseveli",
+  "characters.3rdSpiderSwarm.special1.description": "<p>Cible : Initiative la plus haute</p><p><i>Vous vous retrouvez incapable de bouger, pris dans la toile d'araignée.</i></p><b>Attaque</b> en <b>Ligne de Vue</b><p>(Cible) +1 <b>IMMOBILISATION</b></p>",
+
+  "characters.carlJohnson.name": "Carl Johnson",
+  "characters.carlJohnson.special1.name": "Fortitude",
+  "characters.carlJohnson.special1.description": "<p><i>Le corps de Carl est aussi inébranlable que sa loyauté.</i></p><b>Défense</b><p>(Soi) +2 <b>RÉSISTANCE</b>, +1 <b>Initiative</b>.</p>",
+  "characters.carlJohnson.special2.name": "Domination mentale",
+  "characters.carlJohnson.special2.description": "<p><i>« S'il vous plaît, tenez-vous bien. »</i></p><b>Attaque</b><p>(Cible) Défaussez votre carte de <b>combat</b> si vous en avez une.</p>",
+
+  "characters.unwashedPervert.name": "Sale Pervers",
+  "characters.unwashedPervert.special1.name": "Puanteur Épouvantable",
+  "characters.unwashedPervert.special1.description": "<p><i>Ailes de poulet, pisse de chat, fluides corporels et un peu de parfum bon marché</i></p><b>Attaque</b><p>(Cibles adjacentes à ce PNJ) +1 <b>Dégât Inévitable</b>.</p>",
+
+  "characters.ancientGhoul.name": "Vieille Goule",
+  "characters.ancientGhoul.special1.name": "Pieu dans le coeur",
+  "characters.ancientGhoul.special1.description": "<p>Cible : Initiative la plus haute</p><p><i>Piquez-les avec le bout pointu.</i></p><b>Attaque</b><p>(Cible) +1 jeton <b>ÉTOURDISSEMENT</b></p>",
+  "characters.ancientGhoul.special2.name": "La force des ages",
+  "characters.ancientGhoul.special2.description": "<p><i>« Je savais que ce moment arriverait. »</i></p><b>Défense</b><p>(Soi) +2 <b>RÉSISTANCE</b>, -1 <b>Initiative</b></p>",
+
+  "characters.sylvester.name": "Sylvester",
+  "characters.sylvester.special1.name": "Tir astucieux",
+  "characters.sylvester.special1.description": "<p>Cible : Initiative la plus basse</p><p><i>Votre futur faucheur tire sur vos jambes, dans le but de vous ralentir.</i></p><b>Attaque</b> en <b>Ligne de Vue</b><p>(Cible) +1 jeton <b>RALENTISSEMENT</b></p>",
+  "characters.sylvester.special2.name": "Battre en retraite",
+  "characters.sylvester.special2.description": "<b>Attaque</b> en <b>Ligne de Vue</b><p>(Soi) Recule de 2 <b>HEX</b> de sa cible.</p>",
+
+  "characters.samuelArmstrong.name": "Samuel Armstrong",
+  "characters.samuelArmstrong.special1.name": "Canne épée",
+  "characters.samuelArmstrong.special1.description": "<p>Cible : Initiative la plus haute</p><p><i>Sa canne est secrètement une arme mortelle.</i></p><b>Attaque</b><p>(Cible) -1 <b>Initiative</b>.</p>",
+  "characters.samuelArmstrong.special2.name": "Leader inspirant",
+  "characters.samuelArmstrong.special2.description": "<p><i>La présence puissante et imposante de Samuel fait de lui un leader parfait pour la coterie.</i></p><b>Défense</b><p>(Joueur) +1 <b>dé</b> à votre prochain test de <b>compétence</b>.</p>",
+  "characters.samuelArmstrong.passive1.name": "Oublie !",
+  "characters.samuelArmstrong.passive1.description": "Lorsque rattrapés, les <b>PNJ</b> cessent de fuir et aucun <b>Bris</b> de <b>Mascarade</b> ne survient.",
+
+  "characters.thomasChartrand.name": "Thomas Chartrand",
+  "characters.thomasChartrand.special1.name": "Fusil à pompe",
+  "characters.thomasChartrand.special1.description": "<p>Cible : La plus blessée</p><p><i>L'expression parfaite de votre colère.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b></p>",
+  "characters.thomasChartrand.special2.name": "Bris de genou",
+  "characters.thomasChartrand.special2.description": "<p>Cible : Plus haute attaque</p><p><i>Lorsque Thomas a besoin d'envoyer un message.</i></p><b>Attaque</b><p>(Soi) +2 <b>Déplacement</b>,</p><p>(Cible) +1 jeton <b>IMMOBILISATION</b></p>",
+  "characters.thomasChartrand.passive1.name": "Présence intimidante",
+  "characters.thomasChartrand.passive1.description": "+1 dé à tous vos tests de <b>SOCIAL</b> + <b>INTIMIDATION</b>",
+
+  "characters.gabeTremblay.name": "Gabe Tremblay",
+  "characters.gabeTremblay.special1.name": "Adaptable",
+  "characters.gabeTremblay.special1.description": "<p>Cible : La plus blessée</p><p><i>L'outil de chaque Caitiff.</i></p><b>Défense</b><p>(Joueur) +1 jeton <b>RÉSISTANCE</b></p>",
+  "characters.gabeTremblay.special2.name": "Survive",
+  "characters.gabeTremblay.special2.description": "<p>Cible : Soi</p><p><i>Les blessures de Gabe se referment.</i></p><b>Défense</b><p>(Soi) -2 <b>Dégâts</b></p>",
+  "characters.gabeTremblay.passive1.name": "Vigilant",
+  "characters.gabeTremblay.passive1.description": "+1 dé à tous vos test de <b>MENTAL</b> + <b>VIGILANCE</b>",
+
+  "characters.arenKonway.name": "Aren Konway",
+  "characters.arenKonway.special1.name": "Griffure",
+  "characters.arenKonway.special1.description": "<p>Cible : La moins blessée</p><p><i>Aren griffe violemment un ennemi.</i></p><b>Attaque</b><p>(Cible) +1 jeton <b>SAIGNEMENT</b></p>",
+  "characters.arenKonway.special2.name": "Abattre",
+  "characters.arenKonway.special2.description": "<p>Cible : Initiative la plus haute</p><p><i>La Gangrel déchire violemment quelque chose ou quelqu'un.</i></p><b>Attaque</b><p>(Cible) +2 jetons <b>RALENTISSEMENT</b></p>",
+  "characters.arenKonway.passive1.name": "Chef de meute",
+  "characters.arenKonway.passive1.description": "+1 <b>Déplacement</b> à tous les personnages et <b>alliés</b>.",
+
+  "characters.haroldBeaulieu.name": "Harold Beaulieu",
+  "characters.haroldBeaulieu.special1.name": "Confusion",
+  "characters.haroldBeaulieu.special1.description": "<p>Cible : Plus haute attaque</p><p><i>Harold perturbe l'esprit de son ennemi, le laissant confus.</i></p><b>Attaque</b><p>(Cible) -1 niveau d'<b>Attaque</b> jusqu'à la fin de leur prochain tour.</p>",
+  "characters.haroldBeaulieu.special2.name": "Broiement d'esprit",
+  "characters.haroldBeaulieu.special2.description": "<p>Cible : Initiative la plus haute</p><p><i>Aucun esprit ne reste intact.</i></p><b>Attaque</b><p>(Cible) -2 <b>Initiative</b>.</p>",
+  "characters.haroldBeaulieu.passive1.name": "Inquêteur",
+  "characters.haroldBeaulieu.passive1.description": "+1 <b>dé</b> à tous vos tests de <b>MENTAL</b> + <b>RECHERCHE</b>.",
+
+  "characters.luciannaRicci.name": "Lucianna Ricci",
+  "characters.luciannaRicci.special1.name": "Calmer la bête",
+  "characters.luciannaRicci.special1.description": "<p>Cible : Soif la plus haute</p><p><i>Apaisez la Bête intérieure d'un allié et réduisez sa soif de sang.</i></p><b>Spécial</b><p>(Joueur) -1 <b>Soif</b></p>",
+  "characters.luciannaRicci.special2.name": "Coup de poing",
+  "characters.luciannaRicci.special2.description": "<p>Cible : La moins blessée</p><p><i>Lucianna frappe un ennemi de toutes ses forces.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b>, <b>Repousse</b> de 1 <b>HEX</b></p>",
+  "characters.luciannaRicci.passive1.name": "Spy knowledge",
+  "characters.luciannaRicci.passive1.description": "+1 dé à tous vos tests de <b>PHYSIQUE</b> + <b>FURTIVITÉ</b>",
+
+  "characters.nicoMiller.name": "Nico Miller",
+  "characters.nicoMiller.special1.name": "Rapide",
+  "characters.nicoMiller.special1.description": "<p>Cible : Initiative la plus haute</p><p><i>Nico fait appel au Sang pour accélérer son rythme.</i></p><b>Attaque</b><p>(Soi) +3 <b>Déplacement</b>, +1 <b>Initiative</b>.</p>",
+  "characters.nicoMiller.special2.name": "Trance",
+  "characters.nicoMiller.special2.description": "<p>Cible : Plus haute attaque</p><p><i>« Regarde-moi dans les yeux. »</i></p><b>Attaque</b><p>(Cible) <b>Attire</b> la cible de 2 <b>HEX</b> vers <b>Nico</b>.</p>",
+  "characters.nicoMiller.passive1.name": "Empathy",
+  "characters.nicoMiller.passive1.description": "+1 dé à tous vos tests de <b>SOCIAL</b> + <b>INTUITION</b>",
+
+  "characters.jadeLinhDuplessis.name": "Jade Linh-Duplessis",
+  "characters.jadeLinhDuplessis.special1.name": "Scruter l'âme",
+  "characters.jadeLinhDuplessis.special1.description": "<p>Cible : Initiative la plus basse</p><p><i>Jade utilise ses pouvoirs pour découvrir les secrets de ses ennemis.</i></p><b>Spécial</b><p>(Cible) révèle sa carte de <b>combat</b>.</p>",
+  "characters.jadeLinhDuplessis.special2.name": "Saignée",
+  "characters.jadeLinhDuplessis.special2.description": "<p>Cible : La plus blessée</p><p><i>La Tremere vide une cible de son sang à distance.</i></p><b>Attaque</b><p>(Cible) +1 <b>Dégât</b>, +1 jeton <b>RALENTISSEMENT</b></p>",
+  "characters.jadeLinhDuplessis.passive1.name": "Méthode scientifique",
+  "characters.jadeLinhDuplessis.passive1.description": "+1 dé à tous vos tests de <b>MENTAL</b> + <b>OCCULTISME</b>",
+
+  "deck.shared.special1.title": "Spécial 1",
+  "deck.shared.special2.title": "Spécial 2",
+
+  "deck.animal.charge1.typeText": "Attaque",
+  "deck.animal.charge1.title": "Charge",
+  "deck.animal.charge1.description": "<p>(Cible) +2 <b>Dégâts</b>, -1 <b>Initiative</b></p>",
+
+  "deck.animal.charge2.typeText": "Attaque",
+  "deck.animal.charge2.title": "Charge",
+  "deck.animal.charge2.description": "<p>(Soi) +1 <b>Déplacement</b></p><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.animal.tear1.typeText": "Attaque",
+  "deck.animal.tear1.title": "Taillader",
+  "deck.animal.tear1.description": "<p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.animal.tear2.typeText": "Attaque",
+  "deck.animal.tear2.title": "Taillader",
+  "deck.animal.tear2.description": "<p>(Soi) -1 <b>RÉSISTANCE</b>,</p><p>(Cible) +2 <b>Dégâts</b></p>",
+
+  "deck.animal.bite1.typeText": "Attaque",
+  "deck.animal.bite1.title": "Morsure",
+  "deck.animal.bite1.description": "<p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.animal.bite2.typeText": "Attaque",
+  "deck.animal.bite2.title": "Morsure",
+  "deck.animal.bite2.description": "<p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.human.punch.typeText": "Attaque",
+  "deck.human.punch.title": "Coup de poing",
+  "deck.human.punch.description": "<p>(Soi) +1 <b>Initiative</b></p>",
+
+  "deck.human.kneeStrike.typeText": "Attaque",
+  "deck.human.kneeStrike.title": "Coup de genou",
+  "deck.human.kneeStrike.description": "<p>(Cible) +1 <b>Dégât</b>, -1 <b>Initiative</b></p>",
+
+  "deck.human.kick1.typeText": "Attaque",
+  "deck.human.kick1.title":  "Coup de pied",
+  "deck.human.kick1.description": "<p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.human.kick2.typeText": "Attaque",
+  "deck.human.kick2.title":  "Coup de pied",
+  "deck.human.kick2.description": "<p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.human.guard.typeText": "Défense",
+  "deck.human.guard.title": "Garde",
+  "deck.human.guard.description": "<p>(Soi) +1 <b>RÉSISTANCE</b></p>",
+
+  "deck.vampire.leap1.typeText": "Attaque",
+  "deck.vampire.leap1.title": "Saut",
+  "deck.vampire.leap1.description": "<p>(Soi) -1 <b>Initiative</b>, +1 <b>Déplacement</b>,</p><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.vampire.leap2.typeText": "Attaque",
+  "deck.vampire.leap2.title": "Saut",
+  "deck.vampire.leap2.description": "<p>(Soi) -1 <b>Initiative</b>, +1 <b>Déplacement</b>,</p><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.vampire.bite1.typeText": "Attaque",
+  "deck.vampire.bite1.title": "Morsure",
+  "deck.vampire.bite1.description": "<p>(Cible) +1 <b>Dégât</b>, +1 <b>Soif</b></p>",
+
+  "deck.vampire.bite2.typeText": "Attaque",
+  "deck.vampire.bite2.title": "Morsure",
+  "deck.vampire.bite2.description": "<p>(Cible) +1 <b>Dégât</b>, +1 <b>Soif</b></p>",
+
+  "deck.vampire.claw1.typeText": "Attaque",
+  "deck.vampire.claw1.title": "Coup de griffes",
+  "deck.vampire.claw1.description": "<p>(Cible) +1 <b>Dégât</b>, -1 <b>Initiative</b></p>",
+
+  "deck.vampire.claw2.typeText": "Attaque",
+  "deck.vampire.claw2.title": "Coup de griffes",
+  "deck.vampire.claw2.description": "<p>(Cible) +1 <b>Dégât</b>, -1 <b>Initiative</b></p>",
+
+  "deck.vampire.dash1.typeText": "Attaque",
+  "deck.vampire.dash1.title": "Ruée",
+  "deck.vampire.dash1.description": "<p>(Soi) +1 <b>Initiative</b>, +1 <b>RÉSISTANCE</b></p>",
+
+  "deck.vampire.dash2.typeText": "Attaque",
+  "deck.vampire.dash2.title": "Ruée",
+  "deck.vampire.dash2.description": "<p>(Soi) +1 <b>Initiative</b>, +1 <b>RÉSISTANCE</b></p>",
+
+  "deck.authority.hook1.typeText": "Attaque",
+  "deck.authority.hook1.title":  "Crochet",
+  "deck.authority.hook1.description": "<p>(Soi) +1 <b>Initiative</b>, </p><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.authority.hook2.typeText": "Attaque",
+  "deck.authority.hook2.title":  "Crochet",
+  "deck.authority.hook2.description": "<p>(Soi) +1 <b>Initiative</b>, </p><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.authority.uppercut1.typeText": "Attaque",
+  "deck.authority.uppercut1.title":  "Uppercut",
+  "deck.authority.uppercut1.description": "<p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.authority.uppercut2.typeText": "Attaque",
+  "deck.authority.uppercut2.title":  "Uppercut",
+  "deck.authority.uppercut2.description": "<p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.authority.stick.typeText": "Attaque",
+  "deck.authority.stick.title": "Matraque",
+  "deck.authority.stick.description": "<p>(Cible) +1 <b>Dégât</b>, -1 <b>Initiative</b></p>",
+
+  "deck.authority.straightShot.typeText": "Attaque dans la Ligne de Vue",
+  "deck.authority.straightShot.title": "Tir droit",
+  "deck.authority.straightShot.description": "<p>(Soi) -1 <b>Initiative</b>,</p><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.authority.guard.typeText": "Défense",
+  "deck.authority.guard.title": "Garde",
+  "deck.authority.guard.description": "<p>(Soi) +1 <b>RÉSISTANCE</b></p>",
+
+  "deck.ghoul.punch1.typeText": "Attaque",
+  "deck.ghoul.punch1.title": "Coup de poing",
+  "deck.ghoul.punch1.description": "<p>(Soi) +1 <b>Initiative</b></p>",
+
+  "deck.ghoul.punch2.typeText": "Attaque",
+  "deck.ghoul.punch2.title": "Coup de poing",
+  "deck.ghoul.punch2.description": "<p>(Soi) +1 <b>Initiative</b></p>",
+
+  "deck.ghoul.hook1.typeText": "Attaque",
+  "deck.ghoul.hook1.title":  "Crochet",
+  "deck.ghoul.hook1.description": "<p>(Soi) +1 <b>Initiative</b>,</p><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.ghoul.hook2.typeText": "Attaque",
+  "deck.ghoul.hook2.title":  "Crochet",
+  "deck.ghoul.hook2.description": "<p>(Soi) +1 <b>Initiative</b>,</p><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.ghoul.kick1.typeText": "Attaque",
+  "deck.ghoul.kick1.title":  "Coup de pied",
+  "deck.ghoul.kick1.description": "<p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.ghoul.kick2.typeText": "Attaque",
+  "deck.ghoul.kick2.title":  "Coup de pied",
+  "deck.ghoul.kick2.description": "<p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.ghoul.guard.typeText": "Défense",
+  "deck.ghoul.guard.title": "Garde",
+  "deck.ghoul.guard.description": "<p>(Soi) +1 <b>RÉSISTANCE</b></p>",
+
+  "deck.ally.punch1.typeText": "Attaque",
+  "deck.ally.punch1.title": "Coup de poing",
+  "deck.ally.punch1.description": "<p>(Soi) +1 <b>Initiative</b></p>",
+
+  "deck.ally.punch2.typeText": "Attaque",
+  "deck.ally.punch2.title": "Coup de poing",
+  "deck.ally.punch2.description": "<p>(Soi) +1 <b>Initiative</b></p>",
+
+  "deck.ally.bite1.typeText": "Attaque",
+  "deck.ally.bite1.title": "Morsure",
+  "deck.ally.bite1.description": "<p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.ally.bite2.typeText": "Attaque",
+  "deck.ally.bite2.title": "Morsure",
+  "deck.ally.bite2.description": "<p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.ally.guard.typeText": "Défense",
+  "deck.ally.guard.title": "Garde",
+  "deck.ally.guard.description": "<p>(Soi) +1 <b>RÉSISTANCE</b></p>",
+
+  "deck.boss1.tear.typeText": "Attaque",
+  "deck.boss1.tear.title": "Taillader",
+  "deck.boss1.tear.description": "<p>(Cible) +2 <b>Dégâts</b>, +1 jeton <b>SAIGNEMENT</b> si la cible subit des <b>dégâts</b></p>",
+
+  "deck.boss1.bite.typeText": "Attaque",
+  "deck.boss1.bite.title": "Morsure",
+  "deck.boss1.bite.description": "<p>(Cible) +2 <b>Dégâts</b>, +1 jeton <b>SAIGNEMENT</b> si la cible subit des <b>dégâts</b></p>",
+
+  "deck.boss1.charge.typeText": "Attaque",
+  "deck.boss1.charge.title": "Charge",
+  "deck.boss1.charge.description": "<p>(Soi) +2 <b>Déplacement</b>,</p><p> +2 <b>Dégâts</b></p>",
+
+  "deck.boss1.howl.typeText": "Défense",
+  "deck.boss1.howl.title": "Hurlement",
+  "deck.boss1.howl.description": "<p>(Cible) +1 <b>Dégât</b>, +2 jetons <b>RALENTISSEMENT</b>, -2 <b>Initiative</b></p>",
+
+  "deck.boss2.punch.typeText": "Attaque",
+  "deck.boss2.punch.title": "Coup de poing",
+  "deck.boss2.punch.description": "<p>(Soi) +1 <b>Initiative</b></p>",
+
+  "deck.boss2.guard.typeText": "Défense",
+  "deck.boss2.guard.title": "Garde",
+  "deck.boss2.guard.description": "<p>(Soi) +2 <b>RÉSISTANCE</b></p>",
+
+  "deck.boss3.tear.typeText": "Attaque",
+  "deck.boss3.tear.title": "Taillader",
+  "deck.boss3.tear.description": "<p>(Soi) -1 <b>RÉSISTANCE</b>,</p><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.boss3.charge.typeText": "Attaque",
+  "deck.boss3.charge.title": "Charge",
+  "deck.boss3.charge.description": "<p>(Soi) +1 <b>Déplacement</b>,</p><p>(Cible) +1 <b>Dégât</b></p>",
+
+  "deck.boss4.bloodBoil.typeText": "Attaque dans la Ligne de Vue",
+  "deck.boss4.bloodBoil.title": "Sang bouillant",
+  "deck.boss4.bloodBoil.description": "<p>(Cible) +1 <b>Dégât</b>, +1 <b>Soif</b></p>",
+
+  "deck.boss4.piercingShot.typeText": "Attaque dans la Ligne de Vue",
+  "deck.boss4.piercingShot.title": "Tri perçant",
+  "deck.boss4.piercingShot.description": "<p>(Cible) +1 <b>Dégât</b>, +1 jeton <b>SAIGNEMENT</b></p>",
+
+  "deck.boss5.claw.typeText": "Attaque",
+  "deck.boss5.claw.title": "Coup de griffes",
+  "deck.boss5.claw.description": "<p>(Cible) -1 <b>Initiative</b></p>",
+
+  "deck.boss5.dash.typeText": "Attaque",
+  "deck.boss5.dash.title": "Ruée",
+  "deck.boss5.dash.description": "<p>(Soi) +1 <b>Déplacement</b></p>",
+
+  "deck.boss6.tear.typeText": "Attaque",
+  "deck.boss6.tear.title": "Taillader",
+  "deck.boss6.tear.description": "<p>(Cible) +2 <b>Dégâts</b>, +1 jeton <b>SAIGNEMENT</b></p>",
+
+  "deck.boss6.fleshOfMarble.typeText": "Défense",
+  "deck.boss6.fleshOfMarble.title": "Peau de marbre",
+  "deck.boss6.fleshOfMarble.description": "<p>(Soi) Ignore tous les <b>dégâts</b> jusqu'à la fin du <b>round</b></p>",
+
+  "deck.boss6.frenzy.typeText": "Attaque dans la Ligne de Vue",
+  "deck.boss6.frenzy.title": "Frénésie",
+  "deck.boss6.frenzy.description": "<p>(Cible) +2 <b>Soif</b></p>",
+
+  "deck.boss6.bite.typeText": "Attaque",
+  "deck.boss6.bite.title": "Morsure",
+  "deck.boss6.bite.description": "<p>(Cible) +2 <b>Dégâts</b>, +2 <b>Soif</b></p>",
+
+  "deck.boss7.begone.typeText": "Défense",
+  "deck.boss7.begone.title": "Vade retro !",
+  "deck.boss7.begone.description": "<p>(Tous) Repousser de 3 <b>HEX</b> de l'autel</p>",
+
+  "deck.boss7.salvation.typeText": "Défense",
+  "deck.boss7.salvation.title": "Pardon",
+  "deck.boss7.salvation.description": "<p>(Soi) -4 <b>Dégâts</b></p>",
+
+  "deck.boss8.auraOfDecay.typeText": "Attaque",
+  "deck.boss8.auraOfDecay.title": "Aura de mort",
+  "deck.boss8.auraOfDecay.description": "<p>(Tous dans une zone de 3 <b>HEX</b>) +2 <b>Dégâts</b>.</p>",
+
+  "deck.boss8.freeze.typeText": "Défense",
+  "deck.boss8.freeze.title": "On ne bouge plus !",
+  "deck.boss8.freeze.description": "<p>(Tous dans la <b>Ligne de Vue</b>) +1 jeton <b>ÉTOURDISSEMENT</b></p>",
+
+  "deck.boss8.smash.typeText": "Attaque",
+  "deck.boss8.smash.title": "Fracasser",
+  "deck.boss8.smash.description": "<p>(Cible) +3 <b>Dégâts</b>, +1 jeton <b>IMMOBILITÉ/b></p>",
+
+  "target.closest": "La plus près",
+  "target.self": "Soi",
+  "target.most-injured": "La plus blessée",
+  "target.least-injured": "La moins blessée",
+  "target.highest-initiative": "Initiative la plus haute",
+  "target.lowest-initiative": "Initiative la plus basse",
+
+  "statistic.initiative": "Initiative",
+  "statistic.attack": "Attaque",
+  "statistic.resistance": "Résistance",
+
+  "character.phase1": "Niveau I",
+  "character.phase2": "Niveau II",
+
+  "character.menu.reset": "Réinitialiser",
+  "character.menu.changePhase": "Changer de niveau",
+  "character.menu.remove": "Enlever",
+
+  "character.combatCard.placeholder": "Piocher une Carte de Combat",
+  "character.combatCard.revealCard": "Révéler la Carte",
+
+  "addCharacterModal.search.placeholder": "Rechercher",
+
+  "appMenu.resetDecks": "Défausser & Mélanger",
+  "appMenu.drawCards": "Piocher des Cartes"
+}
