@@ -23,7 +23,11 @@ In case of problems with readability, utilize browser zoom functionality
 ![Combat cards](./images/zoom.gif)
 
 Supported languages:
-Currently only the English version is available, although I'll gladly accept translation strings for other languages (check out `src/translations/en.json` file)
+
+- English
+- French (thanks to [orionaskatu](https://github.com/orionaskatu))
+
+I'll gladly accept translation strings for other languages (check out `src/translations/en.json` file)
 
 ## Further development
 
